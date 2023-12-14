@@ -9,7 +9,7 @@ public class Manager : MonoBehaviour
 {
     public void ChangeScene(string sceneName)
     {
-        Debug.Log("Changing Scene");
-        SceneManager.LoadScene("OtherSceneName", LoadSceneMode.Additive);
+        Debug.Log("Changing Scene"+sceneName);
+        SceneManager.LoadScene(sceneName);
     }
 }
