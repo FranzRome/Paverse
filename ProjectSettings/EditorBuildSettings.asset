@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 3283732fa6e71504dbcc51175ff8764d
   - enabled: 1
-    path: Assets/Scenes/List.unity
+    path: Assets/Scenes/List/List Menu.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
   - enabled: 1
     path: Assets/Scenes/AR Scene.unity
     guid: 29f942c02e4b4fe48b03bb117a0d76b3
+  - enabled: 1
+    path: Assets/Scenes/List/Museo Pavesiano.unity
+    guid: d30125bf0d016bf40862a9d7a84009f3
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f9e97b888f7b8ad498943aec8fe66e62, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: cdc0567e13801e443a706aec8c2d3110, type: 2}
