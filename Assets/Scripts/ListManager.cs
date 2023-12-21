@@ -30,6 +30,14 @@ public class ListManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Back();
+        }
+    }
+
     public void SelectPlace(int index)
     {
         for(int i=0; i<buttons.Length; i++)

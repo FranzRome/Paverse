@@ -7,9 +7,28 @@ using UnityEngine.SceneManagement;
 
 public class Manager : MonoBehaviour
 {
+    void Start()
+    {
+        if (SceneManager.GetActiveScene().name == "3D Tour")
+        {
+            Screen.orientation = ScreenOrientation.LandscapeLeft;
+        } 
+        else
+        {
+            Screen.orientation = ScreenOrientation.Portrait;
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            ChangeScene("Menu");
+        }
+    }
+
     public void ChangeScene(string sceneName)
     {
-        Debug.Log("Changing Scene"+sceneName);
         SceneManager.LoadScene(sceneName);
     }
 

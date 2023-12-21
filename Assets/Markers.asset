@@ -37,3 +37,13 @@ MonoBehaviour:
     m_SpecifySize: 0
     m_Name: Museum Icon
     m_Texture: {fileID: 2800000, guid: 7716b851c9e933f479023673141d1e0c, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4808018498195878623
+      m_GuidHigh: 7518805336662891189
+    m_SerializedTextureGuid:
+      m_GuidLow: 0
+      m_GuidHigh: 0
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: 
+    m_Texture: {fileID: 0}
