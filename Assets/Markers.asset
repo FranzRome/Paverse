@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
   m_Name: Markers
   m_EditorClassIdentifier: 
-  m_GuidLow: 0
-  m_GuidHigh: 0
+  m_GuidLow: 5649116188552438694
+  m_GuidHigh: 2018112430831978136
   m_DataStore:
     m_Storage: []
   m_Images:
@@ -21,9 +21,19 @@ MonoBehaviour:
       m_GuidLow: 4704545371944914416
       m_GuidHigh: 16396405307768428180
     m_SerializedTextureGuid:
-      m_GuidLow: 0
-      m_GuidHigh: 0
+      m_GuidLow: 8567040199538346243
+      m_GuidHigh: 6155106434186863768
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
-    m_Name: 
-    m_Texture: {fileID: 0}
+    m_Name: Museo Pavesiano Large
+    m_Texture: {fileID: 2800000, guid: ddf989033dab76e498e46dd4b0546b55, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4984260928706410806
+      m_GuidHigh: 1003797553015166644
+    m_SerializedTextureGuid:
+      m_GuidLow: 3743839194814265425
+      m_GuidHigh: 873167351425925753
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Museum Icon
+    m_Texture: {fileID: 2800000, guid: 7716b851c9e933f479023673141d1e0c, type: 3}

@@ -12,4 +12,9 @@ public class Manager : MonoBehaviour
         Debug.Log("Changing Scene"+sceneName);
         SceneManager.LoadScene(sceneName);
     }
+
+    public void OpenWebsite()
+    {
+        Application.OpenURL("https://fondazionecesarepavese.it/cesare-pavese-vita-opere/");
+    }
 }
