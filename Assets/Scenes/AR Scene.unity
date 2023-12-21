@@ -412,8 +412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FocusMode: -1
-  m_LightEstimationMode: -1
+  m_FocusMode: 1
+  m_LightEstimationMode: 0
   m_AutoFocus: 1
   m_LightEstimation: 0
   m_FacingDirection: 1
@@ -568,7 +568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 0}
-  m_MaxNumberOfMovingImages: 1
+  m_MaxNumberOfMovingImages: 0
   m_TrackedImagePrefab: {fileID: 4426280471663520031, guid: e7464e027710b234594a4aa1eed46320, type: 3}
 --- !u!114 &1894517612
 MonoBehaviour:

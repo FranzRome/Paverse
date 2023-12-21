@@ -12,15 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/List/List Menu.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
   - enabled: 1
-    path: Assets/Scenes/AR Scene.unity
-    guid: 29f942c02e4b4fe48b03bb117a0d76b3
-  - enabled: 1
     path: Assets/Scenes/List/Museo Pavesiano.unity
     guid: d30125bf0d016bf40862a9d7a84009f3
   - enabled: 1
     path: Assets/Scenes/3D Tour/3D Tour.unity
     guid: 2368ca06f60679e41b14788c9eaa2ba0
+  - enabled: 1
+    path: Assets/Scenes/New AR Scene.unity
+    guid: dda80363a137a6042b92cab09332d927
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f9e97b888f7b8ad498943aec8fe66e62, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 657edd4a49fec1c4e9270d4d65a41527, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: cdc0567e13801e443a706aec8c2d3110, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 902808ad3fac7bc4c80b0321d00be44d, type: 2}
