@@ -11,7 +11,7 @@ public class Manager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "3D Tour")
         {
-            Screen.orientation = ScreenOrientation.LandscapeLeft;
+            Screen.orientation = ScreenOrientation.LandscapeRight;
         } 
         else
         {
@@ -23,7 +23,12 @@ public class Manager : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Escape))
         {
-            if (SceneManager.GetActiveScene().name == "List Menu" || SceneManager.GetActiveScene().name == "AR Scene" || SceneManager.GetActiveScene().name == "3D Tour")
+            if (
+                SceneManager.GetActiveScene().name == "List Menu" ||
+                SceneManager.GetActiveScene().name == "AR Scene" ||
+                SceneManager.GetActiveScene().name == "New AR Scene" ||
+                SceneManager.GetActiveScene().name == "3D Tour"
+                )
             {
                 ChangeScene("Main Menu");
             }
