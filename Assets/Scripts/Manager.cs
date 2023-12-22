@@ -41,6 +41,7 @@ public class Manager : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
+        //SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene(), UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
         SceneManager.LoadScene(sceneName);
     }
 
