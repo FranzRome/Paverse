@@ -19,10 +19,9 @@ public class PlayerController : MonoBehaviour
 
         if(touchCount > 0)
         {
-            touchPosition = Input.GetTouch(0).position;
-
             //Debug.Log("Touches > 0");
-            Debug.Log("Touch delta: " + touchDelta);
+
+            touchPosition = Input.GetTouch(0).position;
 
             if(prevTouchCount == 0)
             {
@@ -30,6 +29,9 @@ public class PlayerController : MonoBehaviour
             }
 
             touchDelta = touchPosition - prevTouchPosition;
+
+            Debug.Log("Previous position: " + prevTouchPosition + "  Current position: " + touchPosition);
+            Debug.Log("Touch delta: " + touchDelta);
 
             //Rotate the player object on the y axis and the camera on x axis to maintain independent rotation and not mess up with z axis
             transform.Rotate(rotationSpeed * Time.deltaTime * new Vector3(0f, touchDelta.x, 0f), Space.Self);
