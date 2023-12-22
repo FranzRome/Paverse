@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        scaledRotationSpeed = rotationSpeed / ((Screen.width + 0f) / 500); //TODO Implement
+        scaledRotationSpeed = rotationSpeed / ((Screen.width + 0f) * 0.25f); //TODO Implement
         Debug.Log(scaledRotationSpeed);
     }
 
