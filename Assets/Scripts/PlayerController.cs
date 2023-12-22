@@ -10,6 +10,13 @@ public class PlayerController : MonoBehaviour
 
     private int prevTouchCount = 0;
     private Vector2 prevTouchPosition = Vector2.zero;
+    private float scaledRotationSpeed;
+
+    void Start()
+    {
+        scaledRotationSpeed = rotationSpeed / ((Screen.width + 0f) / 500); //TODO Implement
+        Debug.Log(scaledRotationSpeed);
+    }
 
     private void Update()
     {
@@ -34,8 +41,8 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Touch delta: " + touchDelta);
 
             //Rotate the player object on the y axis and the camera on x axis to maintain independent rotation and not mess up with z axis
-            transform.Rotate(rotationSpeed * Time.deltaTime * new Vector3(0f, touchDelta.x, 0f), Space.Self);
-            Camera.main.transform.Rotate(rotationSpeed * Time.deltaTime * new Vector3(-touchDelta.y, 0f, 0f), Space.Self);
+            transform.Rotate(scaledRotationSpeed * Time.deltaTime * new Vector3(0f, touchDelta.x, 0f), Space.Self);
+            Camera.main.transform.Rotate(scaledRotationSpeed * Time.deltaTime * new Vector3(-touchDelta.y, 0f, 0f), Space.Self);
 
             //Limit Rotation
             /*
