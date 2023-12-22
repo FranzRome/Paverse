@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public float rotationSpeed = 5f;
+    public float rotationSpeed = 50f;
     public float xRotationLowerLimit = -45, xRotationUpperLimit = 60;
 
     private int prevTouchCount = 0;
@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        scaledRotationSpeed = rotationSpeed / ((Screen.width + 0f) * 0.25f); //TODO Implement
+        scaledRotationSpeed = rotationSpeed / ((Screen.width + 0f) * 0.5f); //TODO Implement
         Debug.Log(scaledRotationSpeed);
     }
 
