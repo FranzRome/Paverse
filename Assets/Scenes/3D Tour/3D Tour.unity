@@ -1389,7 +1389,7 @@ PrefabInstance:
       objectReference: {fileID: 1891469924}
     - target: {fileID: 4889048271763810175, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
       propertyPath: movementSpeed
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4889048271763810175, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
       propertyPath: rotationSpeed
@@ -1409,7 +1409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010300393747045083, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
       propertyPath: m_Interpolate
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7010300393747045083, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
       propertyPath: m_CollisionDetection
@@ -2606,18 +2606,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5193689233538238682, guid: 89b3e26b3b6e7264fb85472ee1627196, type: 3}
---- !u!114 &1379635344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379635338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1379635345
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4003,9 +3991,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9213667743981171860, guid: 89b3e26b3b6e7264fb85472ee1627196, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1379635345}
-    - targetCorrespondingSourceObject: {fileID: 9213667743981171860, guid: 89b3e26b3b6e7264fb85472ee1627196, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1379635344}
     - targetCorrespondingSourceObject: {fileID: 891558620636160057, guid: 89b3e26b3b6e7264fb85472ee1627196, type: 3}
       insertIndex: -1
       addedObject: {fileID: 222979340}
@@ -4513,15 +4498,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3030303
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3030303
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3030303
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_LocalPosition.x
