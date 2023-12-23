@@ -41,7 +41,15 @@ public class Manager : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
-        //SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene(), UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+        if (sceneName == "3D Tour")
+        {
+            Screen.orientation = ScreenOrientation.LandscapeRight;
+        }
+        else
+        {
+            Screen.orientation = ScreenOrientation.Portrait;
+        }
+
         SceneManager.LoadScene(sceneName);
     }
 
