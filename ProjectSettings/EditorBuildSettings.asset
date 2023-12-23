@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AR/New AR Scene.unity
     guid: dda80363a137a6042b92cab09332d927
+  - enabled: 1
+    path: Assets/Scenes/AR/Ar Scene PlaneObject.unity
+    guid: d54197ccf9e494f4abd1591bbf10d8e9
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f9e97b888f7b8ad498943aec8fe66e62, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 657edd4a49fec1c4e9270d4d65a41527, type: 2}
