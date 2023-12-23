@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        scaledRotationSpeed = rotationSpeed / ((Screen.width + 0f) * 0.5f); //TODO Implement
+        scaledRotationSpeed = rotationSpeed / ((Screen.width) * 0.01f); //TODO Implement
         Debug.Log(scaledRotationSpeed);
     }
 
@@ -41,15 +41,18 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Touch delta: " + touchDelta);
 
             //Rotate the player object on the y axis and the camera on x axis to maintain independent rotation and not mess up with z axis
-            transform.Rotate(scaledRotationSpeed * Time.deltaTime * new Vector3(0f, touchDelta.x, 0f), Space.Self);
-            Camera.main.transform.Rotate(scaledRotationSpeed * Time.deltaTime * new Vector3(-touchDelta.y, 0f, 0f), Space.Self);
+            transform.Rotate(rotationSpeed * Time.deltaTime * new Vector3(0f, touchDelta.x, 0f), Space.Self);
+            Camera.main.transform.Rotate(rotationSpeed * Time.deltaTime * new Vector3(-touchDelta.y, 0f, 0f), Space.Self);
 
             //Limit Rotation
-            /*
+            
             Vector3 camEuler = Camera.main.transform.eulerAngles;
-            Debug.Log(camEuler);
-            Camera.main.transform.eulerAngles = new Vector3(Mathf.Clamp(camEuler.x, xRotationLowerLimit, xRotationUpperLimit), 0f, 0f);
-            */
+            //Debug.Log(camEuler);
+            if (camEuler.x < 360 && camEuler.x >= 270)
+                Camera.main.transform.eulerAngles = new Vector3(Mathf.Clamp(camEuler.x, xRotationUpperLimit, 359.99f), camEuler.y, camEuler.z);
+            else
+                Camera.main.transform.eulerAngles = new Vector3(Mathf.Clamp(camEuler.x, 0f, xRotationLowerLimit), camEuler.y, camEuler.z);
+
         }
         else
         {
