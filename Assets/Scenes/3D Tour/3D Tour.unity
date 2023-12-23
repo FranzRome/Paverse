@@ -1389,11 +1389,11 @@ PrefabInstance:
       objectReference: {fileID: 1891469924}
     - target: {fileID: 4889048271763810175, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
       propertyPath: movementSpeed
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4889048271763810175, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
       propertyPath: rotationSpeed
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4889048271763810175, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
       propertyPath: xRotationLowerLimit
@@ -1406,6 +1406,14 @@ PrefabInstance:
     - target: {fileID: 7010300393747045083, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
       propertyPath: m_Constraints
       value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010300393747045083, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010300393747045083, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7068989656265305253, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1450,6 +1458,10 @@ PrefabInstance:
     - target: {fileID: 8025551180438049930, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
       propertyPath: field of view
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025551180438049930, guid: 8b37728f9a252c748b159e5d2d2bc944, type: 3}
+      propertyPath: near clip plane
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

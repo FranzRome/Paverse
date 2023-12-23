@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private int prevTouchCount = 0;
     private Vector2 prevTouchPosition = Vector2.zero;
     private float scaledRotationSpeed;
+    private Vector3 move = Vector3.zero;
 
     void Start()
     {
@@ -27,8 +28,7 @@ public class PlayerController : MonoBehaviour
         int touchCount = Input.touchCount;
         Vector2 touchPosition = Vector2.zero;
         Vector2 touchDelta = Vector2.zero;
-
-        body.MovePosition(transform.position + (movementSpeed * Time.deltaTime * new Vector3(joystick.Horizontal, 0f, joystick.Vertical)));
+        move = (transform.right * joystick.Horizontal + transform.forward * joystick.Vertical) * movementSpeed * Time.deltaTime;
 
         if(touchCount > 0)
         {
@@ -69,5 +69,10 @@ public class PlayerController : MonoBehaviour
 
         prevTouchCount = touchCount;
         prevTouchPosition = touchPosition;
+    }
+
+    private void FixedUpdate()
+    {
+        body.MovePosition(transform.position + move);
     }
 }
