@@ -77,12 +77,16 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        prevTouchPosition = touchPosition;
+        prevTouchPosition = touchPosition;  // Set Prev touch position
+
         move = (transform.right * joystick.Horizontal + transform.forward * joystick.Vertical) * movementSpeed;
+        body.velocity = move;
     }
 
+    /*
     private void FixedUpdate()
     {
         body.MovePosition(transform.position + move * Time.fixedDeltaTime);
     }
+    */
 }
