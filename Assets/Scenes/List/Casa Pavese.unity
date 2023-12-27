@@ -1967,7 +1967,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -110}
-  m_SizeDelta: {x: 400, y: 400}
+  m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1910310855
 MonoBehaviour:
@@ -2328,7 +2328,6 @@ MonoBehaviour:
   menu: {fileID: 0}
   list: {fileID: 809063544}
   detail: {fileID: 702089799}
-  buttons: []
 --- !u!1001 &5476021199972704396
 PrefabInstance:
   m_ObjectHideFlags: 0

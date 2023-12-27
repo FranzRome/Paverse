@@ -13,7 +13,7 @@ public class ListManager : MonoBehaviour
     public GameObject menu;
     public GameObject list;
     public GameObject detail;
-    public GameObject[] buttons;
+    //public GameObject[] buttons;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +38,7 @@ public class ListManager : MonoBehaviour
         }
     }
 
-    public void SelectPlace(int index)
+    /*public void SelectPlace(int index)
     {
         for(int i=0; i<buttons.Length; i++)
         {
@@ -47,7 +47,7 @@ public class ListManager : MonoBehaviour
                 buttons[i].SetActive(false);
             }
         }
-    }
+    }*/
 
     public void SelectElement(ListElement element)
     {
@@ -55,7 +55,9 @@ public class ListManager : MonoBehaviour
         detail.SetActive(true);
 
         GameObject.Find("Detail Name").GetComponent<TMP_Text>().text = element.name;
-        GameObject.Find("Detail Image").GetComponent<Image>().sprite = element.sprite;
+        Image image = GameObject.Find("Detail Image").GetComponent<Image>();
+        image.sprite = element.sprite;
+        //image.rectTransform.left = 0f;
         GameObject.Find("Detail Description").GetComponent<TMP_Text>().text = element.description;
     }
 
