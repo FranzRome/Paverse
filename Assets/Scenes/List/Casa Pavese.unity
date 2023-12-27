@@ -2323,6 +2323,23 @@ MonoBehaviour:
       e battezzato a Santo Stefano, fece anche la Prima Comunione nel suo paese Natale
       in quanto quell\u2019anno la sorella si ammal\xF2 di tifo e la madre decise
       di allontanarlo dalla casa in cui vivevano a Torino per paura che venisse contagiato. "
+  - sprite: {fileID: 21300000, guid: fdfca8cf0b38e0e4c9a8ad02f8cd20dc, type: 3}
+    name: Prima Bacheca
+    description: 'La prima bacheca ospita tutte le opere di Cesare Pavese, scritte
+      in italiano. '
+  - sprite: {fileID: 21300000, guid: 934278a557ccfc84f98ef6ccd13cd2c0, type: 3}
+    name: Seconda Bacheca
+    description: 'La seconda bacheca ospita le opere di Cesare Pavese, tradotte in
+      tutte le lingue del mondo. '
+  - sprite: {fileID: 21300000, guid: 1edcd9862fa4bcb4d88312b345df3539, type: 3}
+    name: Lettera di Pietro Calamandrei
+    description: 'Pietro Calamandrei scrive a Cesare Pavese, complimentandosi per
+      le sue opere (14 Agosto 1950). '
+  - sprite: {fileID: 21300000, guid: 305f77a9ec109ef478751f217b58fc3f, type: 3}
+    name: Lettera di Cesare Pavese
+    description: "Cesare Pavese risponde ringraziando il collega, ma afferma che
+      queste osservazioni sono arrivate quando ormai \xE8 \u201CTroppo tardi per
+      lui\u201D (21 Agosto 1950, 6 giorni prima della morte). "
   elementPrefab: {fileID: 4495520493726222596, guid: 7769b2597dd5e5242b99b8adc681d06d, type: 3}
   content: {fileID: 1868178946}
   menu: {fileID: 0}
