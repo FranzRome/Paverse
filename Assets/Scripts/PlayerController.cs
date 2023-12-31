@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEditor.FilePathAttribute;
 
 public class PlayerController : MonoBehaviour
 {
@@ -93,8 +92,8 @@ public class PlayerController : MonoBehaviour
         yRotation = Input.GetAxis("Mouse X");
         xRotation = -Input.GetAxis("Mouse Y");
         Debug.Log(xRotation + " " + yRotation);
-        transform.Rotate(500*rotationSpeed * Time.deltaTime * new Vector3(0f, yRotation, 0f), Space.Self);
-        Camera.main.transform.Rotate(500*rotationSpeed * Time.deltaTime * new Vector3(xRotation, 0f, 0f), Space.Self);
+        transform.Rotate(80*rotationSpeed * Time.deltaTime * new Vector3(0f, yRotation, 0f), Space.Self);
+        Camera.main.transform.Rotate(80*rotationSpeed * Time.deltaTime * new Vector3(xRotation, 0f, 0f), Space.Self);
 
         //Debug.Log(Input.GetAxis("Horizontal"));
         horizontalValue = Input.GetAxis("Horizontal");
