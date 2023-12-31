@@ -3658,12 +3658,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6998152999690185669, guid: d6212701adb12794597e72bc17868519, type: 3}
       propertyPath: m_Name
-      value: Manager
+      value: Tour Manager
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 941986354356390397, guid: d6212701adb12794597e72bc17868519, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6998152999690185669, guid: d6212701adb12794597e72bc17868519, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2138842302}
   m_SourcePrefab: {fileID: 100100000, guid: d6212701adb12794597e72bc17868519, type: 3}
 --- !u!64 &1623054469
 MeshCollider:
@@ -4673,6 +4677,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7838393019694775904, guid: 89b3e26b3b6e7264fb85472ee1627196, type: 3}
+--- !u!1 &2061985662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6998152999690185669, guid: d6212701adb12794597e72bc17868519, type: 3}
+  m_PrefabInstance: {fileID: 1619149784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2070258053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4692,7 +4701,7 @@ PrefabInstance:
     - target: {fileID: 572597488339111853, guid: 2935e75eb5bbd3949ad6f48454508b03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2138842300}
+      objectReference: {fileID: 0}
     - target: {fileID: 572597488339111853, guid: 2935e75eb5bbd3949ad6f48454508b03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -4890,17 +4899,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7906715740886570970, guid: 89b3e26b3b6e7264fb85472ee1627196, type: 3}
---- !u!114 &2138842300 stripped
+--- !u!114 &2138842302
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 941986354356390397, guid: d6212701adb12794597e72bc17868519, type: 3}
-  m_PrefabInstance: {fileID: 1619149784}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2061985662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4c4f25783439384daba00cd3d772a79, type: 3}
+  m_Script: {fileID: 11500000, guid: 38ec9e5921fb9bc4c9c2889e7354f4a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorial: {fileID: 1037495580}
 --- !u!4 &12396455144031255
 Transform:
   m_ObjectHideFlags: 0

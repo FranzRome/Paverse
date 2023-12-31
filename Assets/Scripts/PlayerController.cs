@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEditor.FilePathAttribute;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,68 +19,98 @@ public class PlayerController : MonoBehaviour
     private float scaledRotationSpeed;
     private Vector3 move = Vector3.zero;
 
+    // Keyboard inputs
+    private float horizontalValue, verticalValue;
+    private float xRotation, yRotation;
+
     void Start()
     {
         body = GetComponent<Rigidbody>();
         halfScreenWidth = Screen.width / 2;
         scaledRotationSpeed = rotationSpeed / ((Screen.width) * 0.01f); //TODO Implement
-        Debug.Log(scaledRotationSpeed);
+        //Debug.Log(scaledRotationSpeed);
+
+#if UNITY_ANDROID || UNITY_IOS
+    Debug.Log("Mobile");
+#endif
+
+#if UNITY_WEBGL
+       Debug.Log("Web");
+        joystick.gameObject.SetActive(false);
+#endif
     }
 
     private void Update()
     {
-        Vector2 touchDelta;
+#if UNITY_ANDROID || UNITY_IOS
+            Vector2 touchDelta;
        
-        for (int i = 0; i < Input.touchCount; i++)
-        {
-            Touch t = Input.GetTouch(i);
+            for (int i = 0; i < Input.touchCount; i++)
+            {
+                Touch t = Input.GetTouch(i);
 
-            switch (t.phase) {
-                case UnityEngine.TouchPhase.Began:
-                    if (t.position.x > halfScreenWidth && rightFingerId==-1)
-                    {
-                        rightFingerId = t.fingerId;
-                        prevTouchPosition = t.position;
-                        touchPosition = t.position;
-                    }
-                    break;
-                case UnityEngine.TouchPhase.Canceled:
-                case UnityEngine.TouchPhase.Ended:
-                    if(t.fingerId == rightFingerId)
-                    {
-                        rightFingerId = -1;
-                        prevTouchPosition = Vector2.zero;
-                        touchPosition = Vector2.zero;
-                    }
-                    break;
-                case UnityEngine.TouchPhase.Moved:
-                    if (t.fingerId == rightFingerId)
-                    {
-                        touchPosition = t.position;
-                        touchDelta = touchPosition - prevTouchPosition;
+                switch (t.phase) {
+                    case UnityEngine.TouchPhase.Began:
+                        if (t.position.x > halfScreenWidth && rightFingerId==-1)
+                        {
+                            rightFingerId = t.fingerId;
+                            prevTouchPosition = t.position;
+                            touchPosition = t.position;
+                        }
+                        break;
+                    case UnityEngine.TouchPhase.Canceled:
+                    case UnityEngine.TouchPhase.Ended:
+                        if(t.fingerId == rightFingerId)
+                        {
+                            rightFingerId = -1;
+                            prevTouchPosition = Vector2.zero;
+                            touchPosition = Vector2.zero;
+                        }
+                        break;
+                    case UnityEngine.TouchPhase.Moved:
+                        if (t.fingerId == rightFingerId)
+                        {
+                            touchPosition = t.position;
+                            touchDelta = touchPosition - prevTouchPosition;
 
-                        Debug.Log("Previous position: " + prevTouchPosition + "  Current position: " + touchPosition);
-                        Debug.Log("Touch delta: " + touchDelta);
+                            Debug.Log("Previous position: " + prevTouchPosition + "  Current position: " + touchPosition);
+                            Debug.Log("Touch delta: " + touchDelta);
 
-                        //Rotate the player object on the y axis and the camera on x axis to maintain independent rotation and not mess up with z axis
-                        transform.Rotate(rotationSpeed * Time.deltaTime * new Vector3(0f, touchDelta.x, 0f), Space.Self);
-                        Camera.main.transform.Rotate(rotationSpeed * Time.deltaTime * new Vector3(-touchDelta.y, 0f, 0f), Space.Self);
-
-                        //Limit Rotation
-                        Vector3 camEuler = Camera.main.transform.eulerAngles;
-                        //Debug.Log(camEuler);
-                        if (camEuler.x < 360 && camEuler.x >= 270) // Limit when looking up
-                            Camera.main.transform.eulerAngles = new Vector3(Mathf.Clamp(camEuler.x, xRotationUpperLimit, 359.99f), camEuler.y, camEuler.z);
-                        else // Limit when looking down
-                            Camera.main.transform.eulerAngles = new Vector3(Mathf.Clamp(camEuler.x, 0f, xRotationLowerLimit), camEuler.y, camEuler.z);
-                    }
-                    break;
+                            //Rotate the player object on the y axis and the camera on x axis to maintain independent rotation and not mess up with z axis
+                            transform.Rotate(rotationSpeed * Time.deltaTime * new Vector3(0f, touchDelta.x, 0f), Space.Self);
+                            Camera.main.transform.Rotate(rotationSpeed * Time.deltaTime * new Vector3(-touchDelta.y, 0f, 0f), Space.Self); 
+                        }
+                        break;
+                }
             }
-        }
 
-        prevTouchPosition = touchPosition;  // Set Prev touch position
+            prevTouchPosition = touchPosition;  // Set Prev touch position
+        
+            move = (transform.right * joystick.Horizontal + transform.forward * joystick.Vertical) * movementSpeed;
+#endif
 
-        move = (transform.right * joystick.Horizontal + transform.forward * joystick.Vertical) * movementSpeed;
+#if UNITY_WEBGL
+        yRotation = Input.GetAxis("Mouse X");
+        xRotation = -Input.GetAxis("Mouse Y");
+        Debug.Log(xRotation + " " + yRotation);
+        transform.Rotate(500*rotationSpeed * Time.deltaTime * new Vector3(0f, yRotation, 0f), Space.Self);
+        Camera.main.transform.Rotate(500*rotationSpeed * Time.deltaTime * new Vector3(xRotation, 0f, 0f), Space.Self);
+
+        //Debug.Log(Input.GetAxis("Horizontal"));
+        horizontalValue = Input.GetAxis("Horizontal");
+        verticalValue = Input.GetAxis("Vertical");
+        move = (transform.right * horizontalValue + transform.forward * verticalValue) * movementSpeed;
+        //Debug.Log(move);
+#endif
+        //Limit Rotation
+        Vector3 camEuler = Camera.main.transform.eulerAngles;
+        //Debug.Log(camEuler);
+        if (camEuler.x < 360 && camEuler.x >= 270) // Limit when looking up
+            Camera.main.transform.eulerAngles = new Vector3(Mathf.Clamp(camEuler.x, xRotationUpperLimit, 359.99f), camEuler.y, camEuler.z);
+        else // Limit when looking down
+            Camera.main.transform.eulerAngles = new Vector3(Mathf.Clamp(camEuler.x, 0f, xRotationLowerLimit), camEuler.y, camEuler.z);
+
         body.velocity = move;
-    }
+
+        }
 }
