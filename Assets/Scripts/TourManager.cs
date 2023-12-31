@@ -5,13 +5,19 @@ using UnityEngine;
 
 public class TourManager : MonoBehaviour
 {
-    public GameObject tutorial;
+    public GameObject tutorialMobile;
+    public GameObject tutorialWeb;
+
 
     // Start is called before the first frame update
     void Start()
     {
 #if !UNITY_ANDROID && !UNITY_IOS
-        tutorial.SetActive(false);
+        tutorialMobile.SetActive(false);
+        tutorialWeb.SetActive(true);
+#else
+        tutorialMobile.SetActive(true);
+        tutorialWeb.SetActive(false);
 #endif
     }
 
