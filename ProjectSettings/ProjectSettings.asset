@@ -162,6 +162,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.DefaultCompany.ARMuseum
     Standalone: com.DefaultCompany.AR-Museum
+    iPhone: com.DefaultCompany.AR-Museum
   buildNumber:
     Standalone: 0
     VisionOS: 0
