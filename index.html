@@ -7,6 +7,10 @@
    <title>App Cesare Pavese</title>
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
    <style>
+      *{
+       user-select: none;  
+      }
+
       body {
          width: 100vw;
          height: 100vh;
@@ -255,6 +259,14 @@
            }
          }</style><path d="M 0,500 L 0,291 C 95.16410256410259,316.2692307692308 190.32820512820518,341.53846153846155 259,330 C 327.6717948717948,318.46153846153845 369.85128205128206,270.11538461538464 452,248 C 534.148717948718,225.8846153846154 656.2666666666667,229.99999999999997 741,236 C 825.7333333333333,242.00000000000003 873.0820512820512,249.88461538461536 949,261 C 1024.9179487179488,272.11538461538464 1129.4051282051282,286.46153846153845 1216,292 C 1302.5948717948718,297.53846153846155 1371.297435897436,294.2692307692308 1440,291 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="rgba(31, 108, 91, 0.9)" fill-opacity="0.9" class="path-1"></path></svg>
    </div>
+
+   <script>
+      let notDraggable = document.querySelectorAll('img,a');
+
+      for (let e of notDraggable) {
+         e.setAttribute('draggable', 'false');
+      }
+   </script>
 </body>
 
 </html>
