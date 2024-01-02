@@ -62,8 +62,22 @@
          top: 128px;
          width: 1003px;
          height: 298px;
-         border-radius: 0px 0px 16px 16px;
+         border-radius:  0px 0px 16px 16px;
          background: #dadada;
+      }
+
+      .blob-red{
+         position: absolute;
+         left: 0px;
+         bottom:0px;
+         border-radius: 16px;
+      }
+
+      .blob-green{
+         position: absolute;
+         right: 0px;
+         top:0px;
+         border-radius: 0px;
       }
 
       .welcome{
@@ -171,11 +185,13 @@
 
 <body>
    <div class="nav-bar">
-      <img src="Assets/Images/Logo Fondazione Pavese.png" alt="" class="logo">
+      <img src="Assets/Images/Logo Fondazione Pavese.png" alt="Logo" class="logo"/>
       <div class="button who"><p>Chi Siamo</p></div>
       <div class="button contacts"><p>Contatti</p></div>
    </div>
    <div class="web-app">
+      <img src="Assets/Images/Red Blob.svg" alt="Red Blob" class="blob-red"/>
+      <img src="Assets/Images/Green Blob.svg" alt="Red Blob" class="blob-green"/>
       <div class="welcome">
          <p class="welcome-text1">Benvenuti</p>
          <p class="welcome-text2">Qui potrete provare la nostra App</p>
