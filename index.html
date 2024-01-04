@@ -6,9 +6,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>App Cesare Pavese</title>
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+   <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"-->
    <style>
-      *{
-       user-select: none;  
+      * {
+         user-select: none;
       }
 
       body {
@@ -35,9 +36,12 @@
       }
 
       .button {
+         display: flex;
+         align-items: center;
+         justify-content: center;
          position: absolute;
-         width: 133px;
-         height: 48px;
+         width: 12vw;
+         height: 50px;
          color: black;
          background-color: #fafafa;
          font-size: 18;
@@ -45,15 +49,15 @@
          text-align: center;
          border-bottom: 6px solid #101010
       }
-      
+
       .who {
-         right: 300px;
+         right: 24vw;
          top: 50%;
          transform: translateY(-50%);
       }
 
       .contacts {
-         right: 100px;
+         right: 8vw;
          top: 50%;
          transform: translateY(-50%);
       }
@@ -66,25 +70,25 @@
          top: 128px;
          width: 1003px;
          height: 298px;
-         border-radius:  0px 0px 16px 16px;
+         border-radius: 0px 0px 16px 16px;
          background: #dadada;
       }
 
-      .blob-red{
+      .blob-red {
          position: absolute;
          left: 0px;
-         bottom:0px;
+         bottom: 0px;
          border-radius: 16px;
       }
 
-      .blob-green{
+      .blob-green {
          position: absolute;
          right: 0px;
-         top:0px;
+         top: 0px;
          border-radius: 0px;
       }
 
-      .welcome{
+      .welcome {
          display: flex;
          flex-direction: column;
          position: relative;
@@ -99,7 +103,7 @@
       }
 
       .welcome-text2 {
-         margin:0px;
+         margin: 0px;
          font-size: 26px;
          font-weight: medium;
       }
@@ -115,7 +119,7 @@
          text-decoration: none;
       }
 
-      .try-web-app-text{
+      .try-web-app-text {
          margin: 0px;
          position: absolute;
          left: 50%;
@@ -124,84 +128,285 @@
          transform: translate(-50%, -50%);
          font-size: 24px;
          font-weight: bold;
-         text-align: center;  
+         text-align: center;
          color: black;
       }
 
-   .mobile-app {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top:463px;
-      left:50%;
-      transform: translateX(-50%);
-      width: 336px;
-      height: 321px;
-      text-align: center;
-   }
+      /*
+      .download-mobile-app-button {
+        display: none;
+      }
+*/
+      .mobile-app {
+         display: flex;
+         flex-direction: column;
+         position: absolute;
+         top: 463px;
+         left: 50%;
+         transform: translateX(-50%);
+         width: 336px;
+         height: 321px;
+         text-align: center;
+      }
 
-   .mobile-app-text1 {
-      margin: 0px;
-      font-size: 26px;
-      font-weight: regular;
-   }
+      .mobile-app-text1 {
+         margin: 0px;
+         font-size: 26px;
+         font-weight: regular;
+      }
 
-   .mobile-app-text2 {
-      margin: 0px;
-      font-size: 26px;
-      font-weight: bold;
-   }
+      .mobile-app-text2 {
+         margin: 0px;
+         font-size: 26px;
+         font-weight: bold;
+      }
 
-   .qr-container {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      top:19px;
-      width: 240px;
-      height: 240px;
-      background: #ededed;
-      border-radius: 12px;
-   }
+      .qr-container {
+         position: relative;
+         left: 50%;
+         transform: translateX(-50%);
+         top: 19px;
+         width: 240px;
+         height: 240px;
+         background: #ededed;
+         border-radius: 12px;
+      }
 
-   .qr-code{
-      position: absolute;
-      top: 50%;
-      left:50%;
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-   }
+      .qr-code {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 100px;
+         height: 100px;
+      }
 
 
-   .bottom-section {
-      position: absolute;
-      max-height: 15vh;
-      bottom: 0px;
-   }
+      .bottom-section {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         height: 5%;
+         width: 100%;
+      }
 
-   .wave {
-      position: absolute;
-      bottom: 0px;
-      width: 100vw;
-   }
+      @keyframes wave {
+         0% {
+            margin-left: 0;
+         }
+
+         100% {
+            margin-left: -1600px;
+         }
+      }
+
+      @keyframes swell {
+
+         0%,
+         100% {
+            transform: translate3d(0, -25px, 0);
+         }
+
+         50% {
+            transform: translate3d(0, 5px, 0);
+         }
+      }
+
+      /* Mobile */
+      @media only screen and (max-width: 768px) {
+         .nav-bar {
+            position: sticky;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 80px;
+            background: #EEEEEE;
+            z-index: 1;
+         }
+
+         .logo {
+            position: absolute;
+            height: 100%;
+            left: 15vw;
+         }
+
+         .button {
+            position: absolute;
+            width: 20vw;
+            height: 32px;
+            color: black;
+            background-color: #fafafa;
+            font-size: 14px;
+            font-weight: medium;
+            text-align: center;
+            border-bottom: 2px solid #101010
+         }
+
+         .who {
+            right: 42vw;
+            top: 50%;
+            transform: translateY(-50%);
+         }
+
+         .contacts {
+            right: 16vw;
+            top: 50%;
+            transform: translateY(-50%);
+         }
+
+
+         .web-app {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 80px;
+            width: 70vw;
+            height: 36vh;
+            border-radius: 0px 0px 8px 8px;
+            background: #dadada;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+         }
+
+         .blob-red {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 28vw;
+            height: 14vh;
+            border-radius: 8px;
+         }
+
+         .blob-green {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 26vw;
+            height: 20vh;
+            border-radius: 0px;
+         }
+
+         .welcome {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 10%;
+            text-align: center;
+         }
+
+         .welcome-text1 {
+            margin: 0px;
+            font-size: 6vw;
+            font-weight: 600;
+         }
+
+         .welcome-text2 {
+            display: none;
+         }
+
+         .try-web-app-button {
+            display: none;
+         }
+
+         .try-web-app-text {
+            display: none;
+         }
+
+         .download-mobile-app-button {
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            height: 40px;
+            background: #acacac;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+         }
+
+         .download-mobile-app-text {
+            margin: 0px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            font-size: 4vw;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+         }
+
+         .mobile-app {
+           display: none;
+         }
+
+         .mobile-app-text1 {
+            margin: 0px;
+            font-size: 26px;
+            font-weight: regular;
+         }
+
+         .mobile-app-text2 {
+            margin: 0px;
+            font-size: 26px;
+            font-weight: bold;
+         }
+
+         .qr-container {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 19px;
+            width: 240px;
+            height: 240px;
+            background: #ededed;
+            border-radius: 12px;
+         }
+
+         .qr-code {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+         }
+
+
+         .bottom-section {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 5%;
+            width: 100%;
+         }
+      }
    </style>
 </head>
 
 <body>
    <div class="nav-bar">
-      <img src="Assets/Images/Logo Fondazione Pavese.png" alt="Logo" class="logo"/>
-      <div class="button who"><p>Chi Siamo</p></div>
-      <div class="button contacts"><p>Contatti</p></div>
+      <img src="Assets/Images/Logo Fondazione Pavese.png" alt="Logo" class="logo" />
+      <div class="button who">
+         <p>Chi Siamo</p>
+      </div>
+      <div class="button contacts">
+         <p>Contatti</p>
+      </div>
    </div>
    <div class="web-app">
-      <img src="Assets/Images/Red Blob.svg" alt="Red Blob" class="blob-red"/>
-      <img src="Assets/Images/Green Blob.svg" alt="Red Blob" class="blob-green"/>
+      <img src="Assets/Images/Red Blob.svg" alt="Red Blob" class="blob-red" />
+      <img src="Assets/Images/Green Blob.svg" alt="Red Blob" class="blob-green" />
       <div class="welcome">
          <p class="welcome-text1">Benvenuti</p>
          <p class="welcome-text2">Qui potrete provare la nostra App</p>
       </div>
       <a href="AR Museum Web/index.html" class="try-web-app-button">
-            <p class="try-web-app-text">Prova la web app</p>
+         <p class="try-web-app-text">Prova la web app</p>
+      </a>
+      <a href="AR Museum Web/index.html" class="download-mobile-app-button">
+         <span class="download-mobile-app-text">Scaricate l'App</span>
       </a>
    </div>
    <div class="mobile-app">
@@ -212,54 +417,12 @@
       </div>
    </div>
    <div class="bottom-section">
-      <svg class="wave" width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-         <style>
-         .path-0{
-           animation:pathAnim-0 12s;
-           animation-timing-function: ease-in-out;
-           animation-iteration-count: infinite;
-         }
-         @keyframes pathAnim-0{
-           0%{
-             d: path("M 0,500 L 0,125 C 64.63846153846154,109.65128205128205 129.27692307692308,94.3025641025641 216,112 C 302.7230769230769,129.6974358974359 411.53076923076924,180.44102564102562 483,184 C 554.4692307692308,187.55897435897438 588.5999999999999,143.93333333333334 675,141 C 761.4000000000001,138.06666666666666 900.0692307692309,175.82564102564103 986,172 C 1071.930769230769,168.17435897435897 1105.123076923077,122.76410256410256 1172,108 C 1238.876923076923,93.23589743589744 1339.4384615384615,109.11794871794872 1440,125 L 1440,500 L 0,500 Z");
-           }
-           25%{
-             d: path("M 0,500 L 0,125 C 57.54358974358976,159.38717948717948 115.08717948717953,193.774358974359 210,185 C 304.9128205128205,176.225641025641 437.1948717948718,124.28974358974358 519,100 C 600.8051282051282,75.71025641025642 632.1333333333334,79.06666666666666 689,79 C 745.8666666666666,78.93333333333334 828.2717948717948,75.44358974358974 915,81 C 1001.7282051282052,86.55641025641026 1092.7794871794872,101.15897435897436 1181,110 C 1269.2205128205128,118.84102564102564 1354.6102564102564,121.92051282051281 1440,125 L 1440,500 L 0,500 Z");
-           }
-           50%{
-             d: path("M 0,500 L 0,125 C 96.69230769230768,137.3923076923077 193.38461538461536,149.7846153846154 276,147 C 358.61538461538464,144.2153846153846 427.1538461538461,126.25384615384615 498,130 C 568.8461538461539,133.74615384615385 642.0000000000001,159.2 726,156 C 809.9999999999999,152.8 904.8461538461538,120.94615384615385 991,101 C 1077.1538461538462,81.05384615384615 1154.6153846153848,73.0153846153846 1228,79 C 1301.3846153846152,84.9846153846154 1370.6923076923076,104.99230769230769 1440,125 L 1440,500 L 0,500 Z");
-           }
-           75%{
-             d: path("M 0,500 L 0,125 C 62.7923076923077,98.17948717948718 125.5846153846154,71.35897435897436 213,76 C 300.4153846153846,80.64102564102564 412.45384615384614,116.74358974358974 503,117 C 593.5461538461539,117.25641025641026 662.6,81.66666666666667 723,73 C 783.4,64.33333333333333 835.1461538461538,82.58974358974359 925,105 C 1014.8538461538462,127.41025641025641 1142.8153846153848,153.97435897435898 1235,158 C 1327.1846153846152,162.02564102564102 1383.5923076923077,143.5128205128205 1440,125 L 1440,500 L 0,500 Z");
-           }
-           100%{
-             d: path("M 0,500 L 0,125 C 64.63846153846154,109.65128205128205 129.27692307692308,94.3025641025641 216,112 C 302.7230769230769,129.6974358974359 411.53076923076924,180.44102564102562 483,184 C 554.4692307692308,187.55897435897438 588.5999999999999,143.93333333333334 675,141 C 761.4000000000001,138.06666666666666 900.0692307692309,175.82564102564103 986,172 C 1071.930769230769,168.17435897435897 1105.123076923077,122.76410256410256 1172,108 C 1238.876923076923,93.23589743589744 1339.4384615384615,109.11794871794872 1440,125 L 1440,500 L 0,500 Z");
-           }
-         }</style><path d="M 0,500 L 0,125 C 64.63846153846154,109.65128205128205 129.27692307692308,94.3025641025641 216,112 C 302.7230769230769,129.6974358974359 411.53076923076924,180.44102564102562 483,184 C 554.4692307692308,187.55897435897438 588.5999999999999,143.93333333333334 675,141 C 761.4000000000001,138.06666666666666 900.0692307692309,175.82564102564103 986,172 C 1071.930769230769,168.17435897435897 1105.123076923077,122.76410256410256 1172,108 C 1238.876923076923,93.23589743589744 1339.4384615384615,109.11794871794872 1440,125 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="rgba(194, 55, 40, 1)" fill-opacity="1" class="path-0"></path><style>
-         .path-1{
-           animation:pathAnim-1 12s;
-           animation-timing-function: ease-in-out;
-           animation-iteration-count: infinite;
-         }
-         @keyframes pathAnim-1{
-           0%{
-             d: path("M 0,500 L 0,291 C 95.16410256410259,316.2692307692308 190.32820512820518,341.53846153846155 259,330 C 327.6717948717948,318.46153846153845 369.85128205128206,270.11538461538464 452,248 C 534.148717948718,225.8846153846154 656.2666666666667,229.99999999999997 741,236 C 825.7333333333333,242.00000000000003 873.0820512820512,249.88461538461536 949,261 C 1024.9179487179488,272.11538461538464 1129.4051282051282,286.46153846153845 1216,292 C 1302.5948717948718,297.53846153846155 1371.297435897436,294.2692307692308 1440,291 L 1440,500 L 0,500 Z");
-           }
-           25%{
-             d: path("M 0,500 L 0,291 C 101.33333333333331,264.0974358974359 202.66666666666663,237.1948717948718 269,256 C 335.33333333333337,274.8051282051282 366.66666666666674,339.31794871794875 443,343 C 519.3333333333333,346.68205128205125 640.6666666666665,289.5333333333333 736,281 C 831.3333333333335,272.4666666666667 900.6666666666667,312.548717948718 983,312 C 1065.3333333333333,311.451282051282 1160.6666666666665,270.2717948717949 1239,260 C 1317.3333333333335,249.72820512820513 1378.6666666666667,270.36410256410255 1440,291 L 1440,500 L 0,500 Z");
-           }
-           50%{
-             d: path("M 0,500 L 0,291 C 100.61794871794874,300.34871794871793 201.23589743589747,309.69743589743587 284,317 C 366.76410256410253,324.30256410256413 431.67435897435894,329.55897435897435 492,324 C 552.3256410256411,318.44102564102565 608.0666666666666,302.06666666666666 682,297 C 755.9333333333334,291.93333333333334 848.0589743589743,298.174358974359 927,303 C 1005.9410256410257,307.825641025641 1071.6974358974358,311.23589743589747 1155,309 C 1238.3025641025642,306.76410256410253 1339.1512820512821,298.8820512820513 1440,291 L 1440,500 L 0,500 Z");
-           }
-           75%{
-             d: path("M 0,500 L 0,291 C 75.43076923076919,262.6282051282051 150.86153846153837,234.25641025641022 244,230 C 337.1384615384616,225.74358974358978 447.9846153846155,245.60256410256414 519,268 C 590.0153846153845,290.39743589743586 621.1999999999999,315.3333333333333 696,304 C 770.8000000000001,292.6666666666667 889.2153846153847,245.06410256410257 988,235 C 1086.7846153846153,224.93589743589743 1165.9384615384615,252.4102564102564 1238,268 C 1310.0615384615385,283.5897435897436 1375.0307692307692,287.2948717948718 1440,291 L 1440,500 L 0,500 Z");
-           }
-           100%{
-             d: path("M 0,500 L 0,291 C 95.16410256410259,316.2692307692308 190.32820512820518,341.53846153846155 259,330 C 327.6717948717948,318.46153846153845 369.85128205128206,270.11538461538464 452,248 C 534.148717948718,225.8846153846154 656.2666666666667,229.99999999999997 741,236 C 825.7333333333333,242.00000000000003 873.0820512820512,249.88461538461536 949,261 C 1024.9179487179488,272.11538461538464 1129.4051282051282,286.46153846153845 1216,292 C 1302.5948717948718,297.53846153846155 1371.297435897436,294.2692307692308 1440,291 L 1440,500 L 0,500 Z");
-           }
-         }</style><path d="M 0,500 L 0,291 C 95.16410256410259,316.2692307692308 190.32820512820518,341.53846153846155 259,330 C 327.6717948717948,318.46153846153845 369.85128205128206,270.11538461538464 452,248 C 534.148717948718,225.8846153846154 656.2666666666667,229.99999999999997 741,236 C 825.7333333333333,242.00000000000003 873.0820512820512,249.88461538461536 949,261 C 1024.9179487179488,272.11538461538464 1129.4051282051282,286.46153846153845 1216,292 C 1302.5948717948718,297.53846153846155 1371.297435897436,294.2692307692308 1440,291 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="rgba(31, 108, 91, 0.9)" fill-opacity="0.9" class="path-1"></path></svg>
+
    </div>
 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
    <script>
       let notDraggable = document.querySelectorAll('img,a');
 
@@ -267,6 +430,7 @@
          e.setAttribute('draggable', 'false');
       }
    </script>
+
 </body>
 
 </html>
