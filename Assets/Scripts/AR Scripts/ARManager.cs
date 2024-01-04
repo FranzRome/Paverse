@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class PlaneObjectManager : MonoBehaviour
 {
-    public GameObject spawn_sedia;
-    public GameObject spawn_porta;
+    [SerializeField] GameObject spawn_libro;
+    [SerializeField] GameObject spawn_pipa;
+    [SerializeField] GameObject spawn_penna;
+    [SerializeField] GameObject spawn_altro;
 
     string spawn_prefab;
 
@@ -41,16 +43,20 @@ public class PlaneObjectManager : MonoBehaviour
     {
         if (Input.touchCount > 0)
         {
-            if(spawn_prefab == "spawn_sedia")
+            if(spawn_prefab == "spawn_penna")
             {
-                SpawnObjectHelper(spawn_sedia);
+                SpawnObjectHelper(spawn_penna);
             }
-            else if(spawn_prefab == "spawn_porta")
+            else if(spawn_prefab == "spawn_pipa")
             {
-                SpawnObjectHelper(spawn_porta);
+                SpawnObjectHelper(spawn_pipa);
+            }
+            else if (spawn_prefab == "spawn_libro")
+            {
+                SpawnObjectHelper(spawn_libro);
             }
 
-            
+
         }
     }
 
@@ -67,14 +73,14 @@ public class PlaneObjectManager : MonoBehaviour
             var hitpose = hits[0].pose;
             if (!object_spawned)
             {
-                spawned_object = Instantiate(prefab, hitpose.position, hitpose.rotation);
+                spawned_object = Instantiate(prefab, hitpose.position, prefab.transform.rotation);
                 object_spawned = true;
 
             }
             else
             {
                 Destroy(spawned_object);
-                spawned_object = Instantiate(prefab, hitpose.position, hitpose.rotation);
+                spawned_object = Instantiate(prefab, hitpose.position, prefab.transform.rotation);
             }
         }
     }
