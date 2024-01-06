@@ -4,9 +4,11 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Manager : MonoBehaviour
 {
+
     void Start()
     {
         if (SceneManager.GetActiveScene().name == "3D Tour")
@@ -56,5 +58,20 @@ public class Manager : MonoBehaviour
     public void OpenWebsite()
     {
         Application.OpenURL("https://fondazionecesarepavese.it/cesare-pavese-vita-opere/");
+    }
+
+    public void ChiediSeARCoreInstallato(GameObject ar_panel)
+    {
+        ar_panel.SetActive(true);
+    }
+
+    public void ARCoreNonInstallato(GameObject ar_panel)
+    {
+        ar_panel.SetActive(false);
+    }
+
+    public void OpenDownloadARCore()
+    {
+        Application.OpenURL("https://www.bing.com/ck/a?!&&p=7d49bcfb4378cc5dJmltdHM9MTcwNDQ5OTIwMCZpZ3VpZD0wNmIwZGIzZC1lMWM4LTY1ZTctMTcyNy1jODJjZTBhNzY0ZTcmaW5zaWQ9NTIyMg&ptn=3&ver=2&hsh=3&fclid=06b0db3d-e1c8-65e7-1727-c82ce0a764e7&psq=ar+core+download+play+store&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5nb29nbGUuYXIuY29yZQ&ntb=1");
     }
 }
