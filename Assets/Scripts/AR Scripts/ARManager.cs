@@ -90,4 +90,13 @@ public class PlaneObjectManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void GiraSinistra()
+    {
+        spawned_object.transform.Rotate(new Vector3(0, 35, 0));
+    }
+    public void GiraDestra()
+    {
+        spawned_object.transform.Rotate(new Vector3(0, -35, 0));
+    }
+
 }

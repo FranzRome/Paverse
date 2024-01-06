@@ -4,9 +4,11 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Manager : MonoBehaviour
 {
+
     void Start()
     {
         if (SceneManager.GetActiveScene().name == "3D Tour")
@@ -56,5 +58,15 @@ public class Manager : MonoBehaviour
     public void OpenWebsite()
     {
         Application.OpenURL("https://fondazionecesarepavese.it/cesare-pavese-vita-opere/");
+    }
+
+    public void ChiediSeARCoreInstallato(GameObject ar_panel)
+    {
+        ar_panel.SetActive(true);
+    }
+
+    public void ARCoreNonInstallato(GameObject ar_panel)
+    {
+        ar_panel.SetActive(false);
     }
 }
