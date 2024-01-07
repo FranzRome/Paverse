@@ -30,13 +30,6 @@ public class PlaneObjectManager : MonoBehaviour
         arrayman = xr_origin.GetComponent<ARRaycastManager>();
     }
 
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            ChangeScene("Main Menu");
-        }
-    }
 
     // Update is called once per frame
     public void SpawnObject()
@@ -97,6 +90,12 @@ public class PlaneObjectManager : MonoBehaviour
     public void GiraDestra()
     {
         spawned_object.transform.Rotate(new Vector3(0, -35, 0));
+    }
+
+
+    public void FineTurorial(GameObject tutorial)
+    {
+        tutorial.SetActive(false);
     }
 
 }
