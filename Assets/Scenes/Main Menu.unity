@@ -203,6 +203,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 602770859}
+    - target: {fileID: 1703601559674446500, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703601559674446500, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703601559674446500, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703601559674446500, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2519410498177110167, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -291,14 +307,66 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 602770859}
+    - target: {fileID: 3346534844099395780, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 3D Church
+      objectReference: {fileID: 0}
     - target: {fileID: 4337715119094591795, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
       propertyPath: m_Name
       value: Main Menu UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951970410641043608, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951970410641043608, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951970410641043608, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5951970410641043608, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226514186509952180, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226514186509952180, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226514186509952180, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226514186509952180, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8285197689792775121, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 602770859}
+    - target: {fileID: 8317026779207468107, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317026779207468107, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317026779207468107, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317026779207468107, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
