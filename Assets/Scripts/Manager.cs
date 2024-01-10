@@ -43,13 +43,14 @@ public class Manager : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
-        if (sceneName == "3D Tour")
+        if (sceneName.Contains("3D"))
         {
             Screen.orientation = ScreenOrientation.LandscapeRight;
         }
         else
         {
             Screen.orientation = ScreenOrientation.Portrait;
+            Destroy(GameObject.Find("Player"));
         }
 
         SceneManager.LoadScene(sceneName);
