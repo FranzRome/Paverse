@@ -487,11 +487,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239961354}
   m_CullTransparentMesh: 1
---- !u!224 &271566821 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-  m_PrefabInstance: {fileID: 1151434058}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &424554277
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,9 +768,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Benvenuto alla casa
+  m_text: 'Benvenuto
 
-    di Cesare Pavese!'
+    alla casa di Nuto!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -852,6 +847,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681054820}
   m_CullTransparentMesh: 1
+--- !u!224 &699433955 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+  m_PrefabInstance: {fileID: 262583242599822154}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &702089799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1229,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.14117648, g: 0.49411768, b: 0.41960788, a: 0}
+  m_BackGroundColor: {r: 0.14117648, g: 0.49411768, b: 0.41960788, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1317,103 +1317,6 @@ Transform:
   - {fileID: 18309303}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1151434058
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1582631774}
-    m_Modifications:
-    - target: {fileID: 2957084488730860374, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_Name
-      value: Safe Area Filler
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_Pivot.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 800
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 305131e22a9351444b8e635179326ac5, type: 3}
 --- !u!1 &1398209438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,7 +1487,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 165993242}
-  - {fileID: 271566821}
+  - {fileID: 699433955}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2294,7 +2197,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e4c4aa111b8c8f341a27e456819e6ac0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b7fcaa4e4dc538049940a4253aa8fe40, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2312,6 +2215,103 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088195051}
   m_CullTransparentMesh: 1
+--- !u!1001 &262583242599822154
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1582631774}
+    m_Modifications:
+    - target: {fileID: 2957084488730860374, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_Name
+      value: Safe Area Filler
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9011173021059717462, guid: 305131e22a9351444b8e635179326ac5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 305131e22a9351444b8e635179326ac5, type: 3}
 --- !u!1001 &4088729846016883203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2407,42 +2407,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elements:
-  - sprite: {fileID: 21300000, guid: 15375c0facaa437469f91a9afb491085, type: 3}
-    name: Tavolo con Sedie
-    description: 'Tavolo con delle sedie posizionato al centro della stanza. '
-  - sprite: {fileID: 21300000, guid: bc1c9b2e4b0e9414c9280f1970c81bbd, type: 3}
-    name: Tavolino con Libro
-    description: 'Tavolino che sorregge uno dei libri scritti da Cesare Pavese. '
-  - sprite: {fileID: 21300000, guid: 2395dbc714f688745b55f14b7ca31a0d, type: 3}
-    name: Letto
-    description: 'Letto matrimoniale sul quale nacque Cesare Pavese. '
-  - sprite: {fileID: 21300000, guid: 3e894d89a943c3440b5915657ef23d8e, type: 3}
-    name: Foto Genitori
-    description: "Foto della mamma Consolina Mesturini e del pap\xE0 Eugenio Pavese
-      appese al muro della stanza. "
-  - sprite: {fileID: 21300000, guid: 1b81898455819574f9c6049b3d9d584a, type: 3}
-    name: Foto Comunione
-    description: "Foto della Prima Comunione di Cesare Pavese. L\u2019autore, nato
-      e battezzato a Santo Stefano, fece anche la Prima Comunione nel suo paese Natale
-      in quanto quell\u2019anno la sorella si ammal\xF2 di tifo e la madre decise
-      di allontanarlo dalla casa in cui vivevano a Torino per paura che venisse contagiato. "
-  - sprite: {fileID: 21300000, guid: fdfca8cf0b38e0e4c9a8ad02f8cd20dc, type: 3}
-    name: Prima Bacheca
-    description: 'La prima bacheca ospita tutte le opere di Cesare Pavese, scritte
-      in italiano. '
-  - sprite: {fileID: 21300000, guid: 934278a557ccfc84f98ef6ccd13cd2c0, type: 3}
-    name: Seconda Bacheca
-    description: 'La seconda bacheca ospita le opere di Cesare Pavese, tradotte in
-      tutte le lingue del mondo. '
-  - sprite: {fileID: 21300000, guid: 1edcd9862fa4bcb4d88312b345df3539, type: 3}
-    name: Lettera di Pietro Calamandrei
-    description: 'Pietro Calamandrei scrive a Cesare Pavese, complimentandosi per
-      le sue opere (14 Agosto 1950). '
-  - sprite: {fileID: 21300000, guid: 305f77a9ec109ef478751f217b58fc3f, type: 3}
-    name: Lettera di Cesare Pavese
-    description: "Cesare Pavese risponde ringraziando il collega, ma afferma che
-      queste osservazioni sono arrivate quando ormai \xE8 \u201CTroppo tardi per
-      lui\u201D (21 Agosto 1950, 6 giorni prima della morte). "
+  - sprite: {fileID: 21300000, guid: 201db6460e483bd44bbc57741a57bcc4, type: 3}
+    name: Creazioni
+    description: 'Alcune delle creazioni di Nuto, appese nel suo laboratorio. '
+  - sprite: {fileID: 21300000, guid: f683b5976812514499fd2e111992f50f, type: 3}
+    name: Banco da lavoro
+    description: 'Banco da lavoro utilizzato da Nuto per realizzare le sue opere
+      di artigianato. '
+  - sprite: {fileID: 21300000, guid: 12a2faa18044df44aa2a5f1864b2855f, type: 3}
+    name: Attrezzi
+    description: "Attrezzi da lavoro dell\u2019epoca."
+  - sprite: {fileID: 21300000, guid: 971a54089dfde2044a732c230d02f23c, type: 3}
+    name: Utensili
+    description: 'Utensili da lavoro utilizzati da Nuto. '
+  - sprite: {fileID: 21300000, guid: 1eeb2fead3765ce488d98546da04359f, type: 3}
+    name: Bigoncia
+    description: "Bigoncia artigianale creata da Nuto. Veniva richiesta dai contadini
+      per raccoglierci dentro l\u2019uva e pestarla per fare il vino. "
+  - sprite: {fileID: 21300000, guid: 9675e1c621f6d9a4382861bd87ce8271, type: 3}
+    name: Macchina da Scrivere
+    description: Tavolino con macchina da scrivere.
+  - sprite: {fileID: 21300000, guid: 22324da6bc26f8240a211c02104baed3, type: 3}
+    name: Clarinetto
+    description: "Mobiletto con all\u2019interno il clarinetto utilizzato da Nuto."
+  - sprite: {fileID: 21300000, guid: 3b8014efe15130144bb5d12624801ac0, type: 3}
+    name: Libreria
+    description: Libreria contenente diverse opere, tra cui alcune scritte da Cesare
+      Pavese.
+  - sprite: {fileID: 21300000, guid: b35d55759cb648540bf749b38b43dfbc, type: 3}
+    name: Quadro
+    description: Quadro raffigurante Cesare Pavese.
+  - sprite: {fileID: 21300000, guid: f8e7855e2ffd5c043bdfeadf7746e444, type: 3}
+    name: Calendario
+    description: Calendario fermo alla data 28 Agosto, giorno successivo alla morte
+      di Cesare Pavese.
+  - sprite: {fileID: 21300000, guid: 3eb22d7a058e26f43acbfaff8513e1ee, type: 3}
+    name: Statua
+    description: Statua rappresentante il capo di Cesare Pavese.
   elementPrefab: {fileID: 4495520493726222596, guid: 7769b2597dd5e5242b99b8adc681d06d, type: 3}
   content: {fileID: 1868178946}
   menu: {fileID: 0}
