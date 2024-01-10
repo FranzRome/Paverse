@@ -10,6 +10,7 @@
    <style>
       * {
          user-select: none;
+         box-sizing: border-box;
       }
 
       body {
@@ -17,6 +18,27 @@
          height: 100vh;
          margin: 0px;
          font-family: "Inter";
+      }
+
+      .home-section {
+         position: relative;
+         width: 100vw;
+         height: 100vh;
+      }
+
+      .who-section {
+         position: relative;
+         width: 100vw;
+         height: 100vh;
+         padding: 5vw 0px;
+      }
+
+      .bottom-section {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         height: 5%;
+         width: 100%;
       }
 
       .nav-bar {
@@ -182,12 +204,36 @@
       }
 
 
-      .bottom-section {
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         height: 5%;
-         width: 100%;
+      .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      
+      .profile-card {
+         padding: 2vw;
+         width: 20vw;
+         height: 40vh;
+         background: #dadada;
+         border-radius: 6%;
+      }
+
+      .profile-card > img {
+         aspect-ratio: 1/1;
+         object-fit: cover;
+         position: relative;
+         left:50%;
+         transform: translateX(-50%);
+         flex-basis: 50%;
+         height: 50%;
+         border-radius: 50%;
+         
+      }
+
+      .profile-card > span {
+         font-size: 2vw;
+         font-weight: bold;
       }
 
       @keyframes wave {
@@ -387,7 +433,7 @@
 
 <body>
    <div class="nav-bar">
-      <img src="Assets/Images/Logo Fondazione Pavese.png" alt="Logo" class="logo" />
+      <img src="Assets/Images/Website/Logo Fondazione Pavese.png" alt="Logo" class="logo" />
       <div class="button who">
          <p>Chi Siamo</p>
       </div>
@@ -395,25 +441,43 @@
          <p>Contatti</p>
       </div>
    </div>
-   <div class="web-app">
-      <img src="Assets/Images/Red Blob.svg" alt="Red Blob" class="blob-red" />
-      <img src="Assets/Images/Green Blob.svg" alt="Red Blob" class="blob-green" />
-      <div class="welcome">
-         <p class="welcome-text1">Benvenuti</p>
-         <p class="welcome-text2">Qui potrete provare la nostra App</p>
+   <div class="home-section">
+      <div class="web-app">
+         <img src="Assets/Images/Website/Red Blob.svg" alt="Red Blob" class="blob-red" />
+         <img src="Assets/Images/Website/Green Blob.svg" alt="Red Blob" class="blob-green" />
+         <div class="welcome">
+            <p class="welcome-text1">Benvenuti</p>
+            <p class="welcome-text2">Qui potrete provare la nostra App</p>
+         </div>
+         <a href="AR Museum Web/index.html" class="try-web-app-button">
+            <p class="try-web-app-text">Prova la web app</p>
+         </a>
+         <a href="AR Museum Mobile/AR Museum.apk" class="download-mobile-app-button">
+            <span class="download-mobile-app-text">Scaricate l'App</span>
+         </a>
       </div>
-      <a href="AR Museum Web/index.html" class="try-web-app-button">
-         <p class="try-web-app-text">Prova la web app</p>
-      </a>
-      <a href="AR Museum Mobile/AR Museum.apk" class="download-mobile-app-button">
-         <span class="download-mobile-app-text">Scaricate l'App</span>
-      </a>
+      <div class="mobile-app">
+         <p class="mobile-app-text1">oppure</p><br>
+         <p class="mobile-app-text2">Scarica la Versione Mobile</p>
+         <div class="qr-container">
+            <img src="Assets/Images/Website/QR Placeholder.png" alt="" class="qr-code">
+         </div>
+      </div>
    </div>
-   <div class="mobile-app">
-      <p class="mobile-app-text1">oppure</p><br>
-      <p class="mobile-app-text2">Scarica la Versione Mobile</p>
-      <div class="qr-container">
-         <img src="Assets/Images/QR Placeholder.png" alt="" class="qr-code">
+   <div class="who-section">
+      <div class="card-container">
+         <div class="profile-card">
+            <img src="Assets/Images/Website/Profiles/Alessandro Pisci.jpg" alt="">
+            <span>Alessandro Pisci</span>
+         </div>
+         <div class="profile-card">
+            <img src="Assets/Images/Website/Profiles/Francesco Romeo.jpg" alt="">
+            <span>Francesco Romeo</span>
+         </div>
+         <div class="profile-card">
+            <img src="Assets/Images/Website/Profiles/WenJun Zheng.jpg" alt="">
+            <span>WenJun Zheng</span>
+         </div>
       </div>
    </div>
    <div class="bottom-section">
