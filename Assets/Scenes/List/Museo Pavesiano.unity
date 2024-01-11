@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.3708985, g: 0.3783704, b: 0.35722548, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -303,12 +303,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 808686715}
+  m_Father: {fileID: 554125984}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -30}
-  m_SizeDelta: {x: 500, y: 600}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -120, y: -80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &57218763
 MonoBehaviour:
@@ -616,6 +616,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424554277}
   m_CullTransparentMesh: 1
+--- !u!1 &554125983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 554125984}
+  m_Layer: 5
+  m_Name: Content
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &554125984
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554125983}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 57218762}
+  m_Father: {fileID: 808686715}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &635409465
 GameObject:
   m_ObjectHideFlags: 0
@@ -971,7 +1007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &702089800
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1218,6 +1254,7 @@ GameObject:
   - component: {fileID: 808686715}
   - component: {fileID: 808686717}
   - component: {fileID: 808686716}
+  - component: {fileID: 808686718}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1237,7 +1274,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 57218762}
+  - {fileID: 554125984}
   m_Father: {fileID: 702089800}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
@@ -1283,6 +1320,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808686714}
   m_CullTransparentMesh: 1
+--- !u!114 &808686718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808686714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 554125984}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &809063544
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,15 +2462,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elements:
-  - sprite: {fileID: 0}
-    name: Il Libro
-    description: Lorem Ipsum
-  - sprite: {fileID: 0}
-    name: La Sedia
-    description: Lorem Ipsum
-  - sprite: {fileID: 0}
-    name: Il Tavolo
-    description: Lorem Ipsum
+  - sprite: {fileID: 21300000, guid: d0d5ceea4b594e94ca8c223efa5926ee, type: 3}
+    name: Sedie Con Teca
+    description: "Al centro della stanza sono posizionate due sedie: -su quella di
+      sinistra \xE8 possibile sedersi per guardare e ascoltare il video proiettato
+      sulla parete; -su quella di destra \xE8 posizionata una teca contenente l\u2019ultimo
+      biglietto scritto da Cesare Pavese prima di uccidersi."
+  - sprite: {fileID: 21300000, guid: f47af35a606fe404199b80954cde911d, type: 3}
+    name: Teca con Biglietto
+    description: "Teca contenente l\u2019autografo dell\u2019ultimo biglietto scritto
+      da Cesare Pavese prima di uccidersi. \u201CPerdono tutti e a tutti chiedo perdono.
+      Va bene? Non fate troppi pettegolezzi. Cesare Pavese\u201D "
+  - sprite: {fileID: 21300000, guid: ef7072c6a6c177f419b95c054056dcd3, type: 3}
+    name: Parete Con Video
+    description: 'Sulla parete della stanza vengono proiettati dei video di approfondimento
+      sulla vita e sulle opere di Cesare Pavese, realizzati interamente dalla Fondazione. '
+  - sprite: {fileID: 21300000, guid: 110a96ce3bb5d8f4ba240e9a43bb6ba4, type: 3}
+    name: Faccia Cesare Pavese
+    description: "Quando non vengono riprodotti dei video, sulla parete della stanza
+      viene proiettata l\u2019immagine di un mosaico formato dalle opere di Cesare
+      Pavese e raffigurante l\u2019autore."
+  - sprite: {fileID: 21300000, guid: d44e9564f55faa14eb499b180264f8bb, type: 3}
+    name: Parete Con Opere
+    description: "Su un\u2019altra parete della stanza sono contenute diverse opere
+      di Cesare Pavese tra cui libri e lettere."
+  - sprite: {fileID: 21300000, guid: 89e5a1a2b2df62d4ca66b0a71309ec0c, type: 3}
+    name: Lettera  A Giuseppe
+    description: "Lettera all\u2019amico Giuseppe Vaudagna, 25 Agosto 1950. In questa
+      lettera scritta all\u2019amico Giuseppe Vaudagna, Cesare Pavese parla della
+      sua situazione, definendo la sua anima \u201Crigata\u201D ed esprimendo il
+      suo desiderio del non voler vedere nessuno, evidenziando inoltre il fatto che
+      sarebbe disposto a pagare un assassino per farsi accoltellare nel sonno. "
+  - sprite: {fileID: 21300000, guid: 491226f0b39c82746a5f1c6249083a4f, type: 3}
+    name: La Bella Estate
+    description: "La bella estate \xE8 una raccolta di tre romanzi brevi scritti
+      da Cesare Pavese in tempi diversi. La raccolta fu pubblicata dall'editore Einaudi
+      di Torino nel 1949, nella collana \"I supercoralli\". Essa comprendeva le opere:
+      La bella estate (1940), Il diavolo sulle colline (1948), e Tra donne sole (1949).
+      Il primo romanzo breve, che d\xE0 il titolo all'opera, fu scritto da Pavese
+      tra il 2 marzo e il 6 maggio del 1940 ed era inizialmente intitolato \"La tenda\".
+      Quella del 1949 fu la prima pubblicazione."
+  - sprite: {fileID: 21300000, guid: 9fd2a3493629c7445857defe588a8a7d, type: 3}
+    name: Copperfield by Charles Dickens
+    description: "David Copperfield \xE8 l'ottavo romanzo scritto da Charles Dickens,
+      pubblicato per la prima volta mensilmente su rivista tra il 1849 e il 1850.
+      Cesare Pavese si occup\xF2 della traduzione e della prefazione di quest\u2019opera. "
   elementPrefab: {fileID: 4495520493726222596, guid: 7769b2597dd5e5242b99b8adc681d06d, type: 3}
   content: {fileID: 1868178946}
   menu: {fileID: 0}
