@@ -29,8 +29,8 @@ public class TourManager : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
         DontDestroyOnLoad(ui);
-
-        if (PlayerPrefs.GetInt("Tutorial Played") == 0)
+        //PlayerPrefs.DeleteAll();
+        if (PlayerPrefs.GetInt("Tutorial Played") != 1)
         {
 #if !UNITY_ANDROID && !UNITY_IOS
         tutorialMobile.SetActive(false);
