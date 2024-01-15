@@ -9,10 +9,10 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        print("collision");
-        print(collision.gameObject.tag);
+        //print("collision");
+        //print(collision.gameObject.tag);
         // Verifica se l'oggetto colliso ha un certo tag (puoi personalizzarlo)
-        if (collision.gameObject.CompareTag("persona"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             // Attiva o disattiva l'oggetto da far apparire/disparire
             objectToShow.SetActive(true);

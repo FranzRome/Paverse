@@ -146,7 +146,7 @@ public class PlayerController : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         SceneManager.SetActiveScene(scene);
-        SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
+        //SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
 
         GameObject spawn = GameObject.Find("Spawn Point");
         transform.position = spawn.transform.position;
