@@ -13,7 +13,6 @@ public class Manager : MonoBehaviour
         ApplicationChrome.statusBarState = ApplicationChrome.States.Visible;
         ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
 
-        DontDestroyOnLoad(this.gameObject);
         if (SceneManager.GetActiveScene().name.Contains("3D"))
         {
             Screen.orientation = ScreenOrientation.LandscapeRight;
@@ -54,6 +53,14 @@ public class Manager : MonoBehaviour
         {
             Screen.orientation = ScreenOrientation.Portrait;
             Destroy(GameObject.Find("Player"));
+        }
+
+        // Exiting from 3D tour
+        if (SceneManager.GetActiveScene().name == "3D Church" && !sceneName.Contains("3D"))
+        {
+            Destroy(GameObject.Find("Player"));
+            Destroy(GameObject.Find("Tour Manager"));
+            Destroy(GameObject.Find("UI 3D Tour"));
         }
 
         SceneManager.LoadScene(sceneName);
