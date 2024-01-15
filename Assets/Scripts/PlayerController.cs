@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     // Components
     private Rigidbody body;
     private Animation animation;
+    private GameObject mCamera;
 
     // Teleport destination
     private string destination;
@@ -140,13 +141,19 @@ public class PlayerController : MonoBehaviour
 
     public void Teleport()
     {
-        SceneManager.LoadScene(destination);
+        print("Destination: " + destination);
+        SceneManager.LoadSceneAsync(destination);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         SceneManager.SetActiveScene(scene);
         //SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
+
+        if(SceneManager.GetActiveScene().name == "3D Church")
+        {
+            Destroy(GameObject.Find("Player"));
+        }
 
         GameObject spawn = GameObject.Find("Spawn Point");
         transform.position = spawn.transform.position;
