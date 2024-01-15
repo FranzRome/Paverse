@@ -24,14 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/List/Casa Pavese.unity
     guid: 71ae65f32212a214e9207faa90b49e95
   - enabled: 1
-    path: Assets/Scenes/3D Tour/3D Church.unity
-    guid: 0902f16aad5c22842aba2350df685579
-  - enabled: 1
     path: Assets/Scenes/3D Tour/3D Museum.unity
     guid: bab34b416f43c794c8a2f00076b25645
   - enabled: 1
     path: Assets/Scenes/3D Tour/3D Nuto.unity
     guid: 6218613b5bb92ff4cb257d008f033183
+  - enabled: 1
+    path: Assets/Scenes/3D Tour/3D Church.unity
+    guid: 1172cbcffb9496a4994addf7f982a617
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f9e97b888f7b8ad498943aec8fe66e62, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 657edd4a49fec1c4e9270d4d65a41527, type: 2}

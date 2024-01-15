@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class teleport : MonoBehaviour
+public class Teleport : MonoBehaviour
 {
-    // Specifica il nome della scena di destinazione
-    public string stanza_cesare;
+    public string destination; // Destination Scene Name
 
     private void OnTriggerEnter(Collider other)
     {
         // Verifica se il collider con cui stiamo collidendo ha il tag desiderato
-        if (other.CompareTag("persona"))
+        if (other.CompareTag("Player"))
         {
-            // Teletrasportati alla scena di destinazione
-            SceneManager.LoadScene(stanza_cesare);
+            other.GetComponent<Rigidbody>().velocity = Vector3.zero;  // Stops Player Movement
+            other.GetComponent<PlayerController>().BeginTeleport(destination);
         }
     }
 }
