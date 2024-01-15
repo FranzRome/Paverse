@@ -2403,6 +2403,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToShow: {fileID: 254976223}
+  objectsToHide:
+  - {fileID: 1889503173}
 --- !u!1 &740710657 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1838999802315863284, guid: f36dd74cb245ee04cab247d191c4574c, type: 3}
