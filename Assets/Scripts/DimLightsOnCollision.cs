@@ -24,7 +24,7 @@ public class DimLightsOnCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("persona"))
+        if (other.CompareTag("Player"))
         {
             triggered = true;
         }
