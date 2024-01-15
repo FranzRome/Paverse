@@ -10,6 +10,9 @@ public class Manager : MonoBehaviour
 {
     void Start()
     {
+        ApplicationChrome.statusBarState = ApplicationChrome.States.Visible;
+        ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
+
         DontDestroyOnLoad(this.gameObject);
         if (SceneManager.GetActiveScene().name.Contains("3D"))
         {
