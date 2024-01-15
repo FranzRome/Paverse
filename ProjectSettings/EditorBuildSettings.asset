@@ -31,7 +31,7 @@ EditorBuildSettings:
     guid: bab34b416f43c794c8a2f00076b25645
   - enabled: 1
     path: Assets/Scenes/3D Tour/3D Nuto.unity
-    guid: 854506a1463943a4cb24902d772b1d6a
+    guid: 6218613b5bb92ff4cb257d008f033183
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f9e97b888f7b8ad498943aec8fe66e62, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 657edd4a49fec1c4e9270d4d65a41527, type: 2}
