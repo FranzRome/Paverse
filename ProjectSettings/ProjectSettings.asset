@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: AR-Museum
+  companyName: 9 Studio
+  productName: Paverse
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.9803922, g: 0.9803922, b: 0.9686275, a: 1}
@@ -41,7 +41,7 @@ PlayerSettings:
     height: 1
   m_SplashScreenLogos:
   - logo: {fileID: 21300000, guid: 4239de4bc0a865e41be183ae48786b6b, type: 3}
-    duration: 2
+    duration: 3
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
@@ -138,7 +138,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 0.1
+  bundleVersion: 0.9
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
@@ -349,27 +349,37 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: c9a69668b66e4ab41889e49ae03cf3b8, type: 3}
+      - {fileID: 2800000, guid: ca68576e4117e7f44b12bffa7ad7e656, type: 3}
       m_Width: 432
       m_Height: 432
       m_Kind: 2
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: c9a69668b66e4ab41889e49ae03cf3b8, type: 3}
+      - {fileID: 2800000, guid: db0fa4b13cf96b34f8556c662e9d4acc, type: 3}
       m_Width: 324
       m_Height: 324
       m_Kind: 2
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: 234dd815b74fc5747bcc2311f72dd02b, type: 3}
+      - {fileID: 2800000, guid: 3ee0a42f4508f2b48bfaf0921a5d8d26, type: 3}
       m_Width: 216
       m_Height: 216
       m_Kind: 2
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: aaeafcc1ad0139241aa2f566c56d65d4, type: 3}
+      - {fileID: 2800000, guid: 8900a6226ed457442af359fb71daf5f3, type: 3}
       m_Width: 162
       m_Height: 162
       m_Kind: 2
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 2800000, guid: 4245c23368f0d02409712a72d55e39fe, type: 3}
+      - {fileID: 2800000, guid: 03cb13d951abd6d41acb796caed6751b, type: 3}
       m_Width: 108
       m_Height: 108
       m_Kind: 2
@@ -838,6 +848,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
+    Android: 
     iPhone: UNITY_XR_ARKIT_LOADER_ENABLED
   additionalCompilerArguments: {}
   platformArchitecture: {}
