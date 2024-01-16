@@ -32,7 +32,7 @@ public class TourManager : MonoBehaviour
         //PlayerPrefs.DeleteAll();
         if (PlayerPrefs.GetInt("Tutorial Played") != 1)
         {
-#if !UNITY_ANDROID && !UNITY_IOS
+#if !(UNITY_ANDROID || UNITY_IOS)
         tutorialMobile.SetActive(false);
         tutorialWeb.SetActive(true);
         backButton.SetActive(false);
@@ -46,6 +46,18 @@ public class TourManager : MonoBehaviour
             PlayerPrefs.SetInt("Tutorial Played", 1);
         }
     }
+
+#if UNITY_EDITOR
+    private void Update()
+    {
+        // Press Ctrl+R to reset tutorial flag
+        if(Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.R))
+        {
+            PlayerPrefs.SetInt("Tutorial Played", 0);
+            print("Tutorial Reset");
+        }
+    }
+#endif
 
     /*
     // Teleport audio management methods
