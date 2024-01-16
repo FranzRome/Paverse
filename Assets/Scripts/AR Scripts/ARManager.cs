@@ -32,7 +32,7 @@ public class PlaneObjectManager : MonoBehaviour
 
 
     // Update is called once per frame
-    public void SpawnObject()
+    /*public void SpawnObject()
     {
         if (Input.touchCount > 0)
         {
@@ -51,17 +51,14 @@ public class PlaneObjectManager : MonoBehaviour
 
 
         }
-    }
+    }*/
 
-    public void ChangeSpawnPrefab(string prefab)
+    public void ChangeSpawnPrefab(GameObject prefab)
     {
-        spawn_prefab = prefab;
-    }
-
-
-    public void SpawnObjectHelper(GameObject prefab)
-    {
-        if (arrayman.Raycast(Input.GetTouch(0).position, hits, TrackableType.PlaneWithinPolygon))
+        // spawn_prefab = prefab;
+        int x = (Screen.width / 2);
+        int y = (Screen.height / 2);
+        if (arrayman.Raycast(new Vector2(x, y), hits, TrackableType.PlaneWithinPolygon))
         {
             var hitpose = hits[0].pose;
             if (!object_spawned)
@@ -77,6 +74,28 @@ public class PlaneObjectManager : MonoBehaviour
             }
         }
     }
+
+    /*
+    public void SpawnObjectHelper(GameObject prefab)
+    {
+        int x = (Screen.width/2);
+        int y = (Screen.height/2);
+        if (arrayman.Raycast(new Vector2(x,y), hits, TrackableType.PlaneWithinPolygon))
+        {
+            var hitpose = hits[0].pose;
+            if (!object_spawned)
+            {
+                spawned_object = Instantiate(prefab, hitpose.position, prefab.transform.rotation);
+                object_spawned = true;
+
+            }
+            else
+            {
+                Destroy(spawned_object);
+                spawned_object = Instantiate(prefab, hitpose.position, prefab.transform.rotation);
+            }
+        }
+    }*/
 
     public void ChangeScene(string sceneName)
     {
