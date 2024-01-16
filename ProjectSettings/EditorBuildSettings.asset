@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/List/Casa Pavese.unity
     guid: 71ae65f32212a214e9207faa90b49e95
   - enabled: 1
+    path: Assets/Scenes/List/Casa Nuto.unity
+    guid: 256ce78411d6b6f47a54593823dfd028
+  - enabled: 1
     path: Assets/Scenes/3D Tour/3D Nuto.unity
     guid: 6218613b5bb92ff4cb257d008f033183
   - enabled: 1
