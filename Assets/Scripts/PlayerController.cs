@@ -26,8 +26,7 @@ public class PlayerController : MonoBehaviour
 
     // Components
     private Rigidbody body;
-    private Animation animation;
-    private GameObject mCamera;
+    private new Animation animation;
 
     // Teleport destination
     private string destination;
@@ -53,6 +52,8 @@ public class PlayerController : MonoBehaviour
 #if UNITY_WEBGL
        Debug.Log("Web");
         joystick.gameObject.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
 #endif
     }
 
@@ -111,7 +112,7 @@ public class PlayerController : MonoBehaviour
 #if UNITY_WEBGL
         yRotation = Input.GetAxis("Mouse X");
         xRotation = -Input.GetAxis("Mouse Y");
-        Debug.Log(xRotation + " " + yRotation);
+        //Debug.Log(xRotation + " " + yRotation);
         transform.Rotate(80*rotationSpeed * Time.deltaTime * new Vector3(0f, yRotation, 0f), Space.Self);
         Camera.main.transform.Rotate(80*rotationSpeed * Time.deltaTime * new Vector3(xRotation, 0f, 0f), Space.Self);
 
