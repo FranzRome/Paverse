@@ -1582,7 +1582,7 @@ PrefabInstance:
     - target: {fileID: 572597488339111853, guid: 2935e75eb5bbd3949ad6f48454508b03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 941986354356390397, guid: d6212701adb12794597e72bc17868519, type: 3}
     - target: {fileID: 572597488339111853, guid: 2935e75eb5bbd3949ad6f48454508b03, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1796,6 +1796,10 @@ PrefabInstance:
     - target: {fileID: 4337715119094591795, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
       propertyPath: m_Name
       value: UI 3D Tour Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337715119094591795, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
+      propertyPath: m_TagString
+      value: UI
       objectReference: {fileID: 0}
     - target: {fileID: 6574812199106464166, guid: 021429063a437fd4d89d07b59bb975b6, type: 3}
       propertyPath: m_MatchWidthOrHeight
