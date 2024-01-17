@@ -508,6 +508,7 @@ Transform:
   - {fileID: 957443061}
   - {fileID: 76682009}
   - {fileID: 440640904}
+  - {fileID: 1975854461}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &440640904 stripped
@@ -3015,6 +3016,80 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &1975854460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 438619609}
+    m_Modifications:
+    - target: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.759
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.253
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.407
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727490356330286872, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727490356330286872, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_Size.y
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1727490356330286872, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_Size.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062818358930757563, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+      propertyPath: m_Name
+      value: Teleport Church
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+--- !u!4 &1975854461 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1661773617892122261, guid: a8c361ecea9f7824a9b6aa5142c0e499, type: 3}
+  m_PrefabInstance: {fileID: 1975854460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2012342320
 GameObject:
   m_ObjectHideFlags: 0
