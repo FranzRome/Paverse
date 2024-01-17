@@ -47,6 +47,15 @@ public class PlaneObjectManager : MonoBehaviour
 
 
     // Update is called once per frame
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ChangeScene("Main Menu");
+        }
+    }
+
     public void SpawnObject()
     {
         if (Input.touchCount > 0)
