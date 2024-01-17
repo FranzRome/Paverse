@@ -48,6 +48,9 @@ public class Manager : MonoBehaviour
         if (sceneName.Contains("3D"))
         {
             Screen.orientation = ScreenOrientation.LandscapeRight;
+
+            ApplicationChrome.statusBarState = ApplicationChrome.States.Hidden;
+            ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
         }
         else
         {
