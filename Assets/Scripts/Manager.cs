@@ -103,6 +103,7 @@ public class Manager : MonoBehaviour
     public void Load3dScene(string scene_name)
     {
         Screen.orientation = ScreenOrientation.LandscapeRight;
+        Screen.fullScreen = true;
         StartCoroutine(Load3DScene_Coroutine(scene_name));
 
 
