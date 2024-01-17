@@ -26,7 +26,7 @@ public class ListManager : MonoBehaviour
             GameObject elementGameObject = Instantiate(elementPrefab);
             elementGameObject.transform.SetParent(content, false);
             elementGameObject.transform.GetChild(0).GetComponent<TMP_Text>().text = el.name;
-            elementGameObject.GetComponent<Button>().onClick.AddListener(() => { SelectElement(el); });
+            elementGameObject.GetComponent<Button>().onClick.AddListener(() =>  SelectElement(el) );
         }
     }
 
