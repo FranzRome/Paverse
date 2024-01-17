@@ -1306,7 +1306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn_libro: {fileID: 6796013327199592632, guid: a81e97a015a6ae44e9f632f7218255b8, type: 3}
-  spawn_pipa: {fileID: 7995280634063313294, guid: 754a1b5e2346df6419c73d5eccb8c0e5, type: 3}
+  spawn_pipa: {fileID: 7995280634063313294, guid: 564ca0013dbc8074c8777501b7b31d40, type: 3}
   spawn_penna: {fileID: 8160728083829824347, guid: 3aa579d57499e99478e4a5969682795e, type: 3}
   spawn_altro: {fileID: 0}
   planeDetectionText: {fileID: 767356054}

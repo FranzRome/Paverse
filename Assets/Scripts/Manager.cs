@@ -84,6 +84,6 @@ public class Manager : MonoBehaviour
 
     public void OpenDownloadARCore()
     {
-        Application.OpenURL("https://www.bing.com/ck/a?!&&p=7d49bcfb4378cc5dJmltdHM9MTcwNDQ5OTIwMCZpZ3VpZD0wNmIwZGIzZC1lMWM4LTY1ZTctMTcyNy1jODJjZTBhNzY0ZTcmaW5zaWQ9NTIyMg&ptn=3&ver=2&hsh=3&fclid=06b0db3d-e1c8-65e7-1727-c82ce0a764e7&psq=ar+core+download+play+store&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS5nb29nbGUuYXIuY29yZQ&ntb=1");
+        Application.OpenURL("https://play.google.com/store/apps/details?id=com.google.ar.core");
     }
 }

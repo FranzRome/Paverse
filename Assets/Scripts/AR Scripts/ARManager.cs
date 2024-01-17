@@ -38,7 +38,7 @@ public class PlaneObjectManager : MonoBehaviour
         object_spawned = false;
         arrayman = xr_origin.GetComponent<ARRaycastManager>();
         planeManager = xr_origin.GetComponent<ARPlaneManager>();
-        planeDetectionText.text = "Plane Detection ON";
+        planeDetectionText.text = "Rilevamento ripiani ON";
     }
 
 
