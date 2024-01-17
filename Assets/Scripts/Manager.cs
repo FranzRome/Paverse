@@ -61,15 +61,19 @@ public class Manager : MonoBehaviour
         else
         {
             Screen.orientation = ScreenOrientation.Portrait;
+            /*
             Destroy(GameObject.Find("Player"));
+            Destroy(GameObject.Find("UI 3D Tour Variant"));
+            Destroy(GameObject.Find("Tour Manager"));
+            */
         }
 
         // Exiting from 3D tour
-        if (SceneManager.GetActiveScene().name == "3D Church" && !sceneName.Contains("3D"))
+        if (SceneManager.GetActiveScene().name.Contains("3D") && !sceneName.Contains("3D"))
         {
             Destroy(GameObject.Find("Player"));
             Destroy(GameObject.Find("Tour Manager"));
-            Destroy(GameObject.Find("UI 3D Tour"));
+            Destroy(GameObject.Find("UI 3D Tour Variant"));
         }
 
         SceneManager.LoadScene(sceneName);
