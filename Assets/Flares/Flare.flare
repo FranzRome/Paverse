@@ -12,7 +12,7 @@ Flare:
   m_Elements:
   - m_ImageIndex: 0
     m_Position: 0
-    m_Size: 50
+    m_Size: 80
     m_Color: {r: 0.19215687, g: 0.3764706, b: 1, a: 0}
     m_UseLightColor: 0
     m_Rotate: 1
@@ -20,7 +20,7 @@ Flare:
     m_Fade: 1
   - m_ImageIndex: 0
     m_Position: 0.35
-    m_Size: 70
+    m_Size: 120
     m_Color: {r: 0.19215687, g: 0.3764706, b: 1, a: 0}
     m_UseLightColor: 0
     m_Rotate: 1
@@ -28,7 +28,7 @@ Flare:
     m_Fade: 1
   - m_ImageIndex: 0
     m_Position: 1
-    m_Size: 200
+    m_Size: 300
     m_Color: {r: 0.19215687, g: 0.3764706, b: 1, a: 0}
     m_UseLightColor: 0
     m_Rotate: 1
