@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToShow: {fileID: 76682008}
+  objectsToHide: []
 --- !u!1 &296123291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 074c8c3f8b519e64b9c15ef844e29083, type: 3}
@@ -1942,7 +1943,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386384610}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 8b95008f58eacf54eb111d9a17aba1f7, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: c928f0e9e76c3784cbef5f7faeb32d65, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}

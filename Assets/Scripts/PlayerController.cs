@@ -148,12 +148,22 @@ public class PlayerController : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        print("Scene Loaded");
         SceneManager.SetActiveScene(scene);
         //SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
 
+
         if(SceneManager.GetActiveScene().name == "3D Church")
         {
-            Destroy(GameObject.Find("Player"));
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+            //print("Players: " +  players.Length);
+            foreach (GameObject p in players)
+            {
+                if (!p.Equals(this.gameObject))
+                {
+                    Destroy(p);
+                }
+            }
         }
 
         GameObject spawn = GameObject.Find("Spawn Point");

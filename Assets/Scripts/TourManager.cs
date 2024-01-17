@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class TourManager : MonoBehaviour
@@ -29,6 +30,7 @@ public class TourManager : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
         DontDestroyOnLoad(ui);
+        SceneManager.sceneLoaded += OnSceneLoaded; // Scene loaded event
         //PlayerPrefs.DeleteAll();
         if (PlayerPrefs.GetInt("Tutorial Played") != 1)
         {
@@ -58,6 +60,22 @@ public class TourManager : MonoBehaviour
         }
     }
 #endif
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene().name == "3D Church")
+        {
+            TourManager[] tms = GameObject.FindObjectsByType<TourManager>(FindObjectsSortMode.InstanceID);
+            //print("Players: " +  players.Length);
+            foreach (TourManager tm in tms)
+            {
+                if (!tm.Equals(this))
+                {
+                    Destroy(tm.gameObject);
+                }
+            }
+        }
+    }
 
     /*
     // Teleport audio management methods
