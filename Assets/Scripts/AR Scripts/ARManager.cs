@@ -5,6 +5,7 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class PlaneObjectManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PlaneObjectManager : MonoBehaviour
     [SerializeField] GameObject spawn_pipa;
     [SerializeField] GameObject spawn_penna;
     [SerializeField] GameObject spawn_altro;
+    [SerializeField] GameObject button_onoff;
 
     bool button_touched = false;
     bool plane_detection = true;
@@ -21,14 +23,14 @@ public class PlaneObjectManager : MonoBehaviour
 
 
     [SerializeField] GameObject xr_origin;
-
     GameObject spawned_object;
     bool object_spawned;
     ARRaycastManager arrayman;
     ARPlaneManager planeManager;
+    [SerializeField] ARSession arsession;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
-
+    Image button_onoff_image;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,8 @@ public class PlaneObjectManager : MonoBehaviour
         arrayman = xr_origin.GetComponent<ARRaycastManager>();
         planeManager = xr_origin.GetComponent<ARPlaneManager>();
         planeDetectionText.text = "Rilevamento ripiani ON";
+        button_onoff_image = button_onoff.GetComponent<Image>();
+        button_onoff_image.color = Color.green;
     }
 
 
@@ -89,6 +93,7 @@ public class PlaneObjectManager : MonoBehaviour
                     planeManager.enabled = false;
                     plane_detection = false;
                     planeDetectionText.text = "Rilevamento ripiani OFF";
+                    button_onoff_image.color = Color.red;
 
                 }
                 else
@@ -111,6 +116,7 @@ public class PlaneObjectManager : MonoBehaviour
                     planeManager.enabled = false;
                     plane_detection = false;
                     planeDetectionText.text = "Rilevamento ripiani OFF";
+                    button_onoff_image.color = Color.red;
 
                 }
                 else
@@ -124,6 +130,10 @@ public class PlaneObjectManager : MonoBehaviour
 
     public void ChangeScene(string sceneName)
     {
+        arrayman.enabled = true;
+        planeManager.enabled = true;
+        Destroy(spawned_object);
+        arsession.Reset();
         SceneManager.LoadScene(sceneName);
     }
 
@@ -150,6 +160,7 @@ public class PlaneObjectManager : MonoBehaviour
             planeManager.enabled = false;
             plane_detection = false;
             planeDetectionText.text = "Rilevamento ripiani OFF";
+            button_onoff_image.color = Color.red;
         }
         else
         {
@@ -157,7 +168,23 @@ public class PlaneObjectManager : MonoBehaviour
             planeManager.enabled = true;
             plane_detection = true;
             planeDetectionText.text = "Rilevamento ripiani ON";
+            button_onoff_image.color = Color.green;
         }
     }
+
+    public void ResetPlane()
+    {
+        arrayman.enabled = true;
+        planeManager.enabled = true ;
+        planeDetectionText.text = "Rilevamento ripiani ON";
+        button_onoff_image.color = Color.green;
+        Destroy(spawned_object);
+        arsession.Reset();
+        object_spawned = false;
+        spawn_prefab = null;
+
+    }
+
+
 
 }
