@@ -16,8 +16,9 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
-        ApplicationChrome.statusBarState = ApplicationChrome.States.Visible;
-        ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
+        //ApplicationChrome.statusBarState = ApplicationChrome.States.Visible;
+        //ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
+        //Screen.fullScreen = false;
 
         if (SceneManager.GetActiveScene().name.Contains("3D"))
         {
@@ -33,19 +34,15 @@ public class Manager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (
-                SceneManager.GetActiveScene().name == "List Menu" ||
-                SceneManager.GetActiveScene().name == "AR Scene" ||
-                SceneManager.GetActiveScene().name == "New AR Scene" ||
-                SceneManager.GetActiveScene().name == "3D Tour"
-                )
+            if (SceneManager.GetActiveScene().name == "List Menu")
             {
                 ChangeScene("Main Menu");
             }
-            else if(SceneManager.GetActiveScene().name == "Museo Pavesiano")
+            else if (SceneManager.GetActiveScene().name.Contains("3D"))
             {
-                ChangeScene("List Menu");
+                Application.Quit();
             }
+ 
         }
     }
 
@@ -55,8 +52,10 @@ public class Manager : MonoBehaviour
         {
             Screen.orientation = ScreenOrientation.LandscapeRight;
 
-            ApplicationChrome.statusBarState = ApplicationChrome.States.Hidden;
-            ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
+            //ApplicationChrome.statusBarState = ApplicationChrome.States.Hidden;
+            //ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
+
+            //Screen.fullScreen = true;
         }
         else
         {
@@ -74,9 +73,18 @@ public class Manager : MonoBehaviour
             Destroy(GameObject.Find("Player"));
             Destroy(GameObject.Find("Tour Manager"));
             Destroy(GameObject.Find("UI 3D Tour Variant"));
+
+            //ApplicationChrome.statusBarState = ApplicationChrome.States.Visible;
+            //ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
+            //Screen.fullScreen = false;
         }
 
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void CloseApp()
+    {
+        Application.Quit();
     }
 
     public void OpenWebsite()

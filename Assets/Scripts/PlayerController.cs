@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
 
             prevTouchPosition = touchPosition;  // Set Prev touch position
 
-            move = (transform.right * joystick.Horizontal + transform.forward * joystick.Vertical) * movementSpeed;
+            move = (transform.right * joystick.Horizontal + transform.forward * joystick.Vertical + Vector3.up * body.velocity.y) * movementSpeed;
 #endif
 
 #if UNITY_WEBGL
