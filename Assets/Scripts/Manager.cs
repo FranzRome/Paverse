@@ -5,9 +5,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using Unity.Loading;
 
 public class Manager : MonoBehaviour
 {
+
+    public GameObject loading_panel;
+    public Slider progress_slider;
+
+
     void Start()
     {
         ApplicationChrome.statusBarState = ApplicationChrome.States.Visible;
@@ -88,5 +94,36 @@ public class Manager : MonoBehaviour
     public void OpenDownloadARCore()
     {
         Application.OpenURL("https://play.google.com/store/apps/details?id=com.google.ar.core");
+    }
+
+    public void Load3dScene(string scene_name)
+    {
+        Screen.orientation = ScreenOrientation.LandscapeRight;
+        StartCoroutine(Load3DScene_Coroutine(scene_name));
+
+
+    }
+
+    public IEnumerator Load3DScene_Coroutine(string scene_name)
+    {
+        progress_slider.value = 0;
+        loading_panel.SetActive(true);
+
+
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(scene_name);
+        asyncOperation.allowSceneActivation = false;
+        Debug.Log("Pro :" + asyncOperation.progress);
+        float progress = 0;
+        while (!asyncOperation.isDone)
+        {
+            progress = Mathf.MoveTowards(progress, asyncOperation.progress, Time.deltaTime);
+            progress_slider.value = progress;
+            if(progress >= 0.9f)
+            {
+                progress_slider.value = 1;
+                asyncOperation.allowSceneActivation = true;
+            }
+            yield return null;
+        }
     }
 }
