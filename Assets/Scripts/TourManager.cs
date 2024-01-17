@@ -66,12 +66,20 @@ public class TourManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "3D Church")
         {
             TourManager[] tms = GameObject.FindObjectsByType<TourManager>(FindObjectsSortMode.InstanceID);
-            //print("Players: " +  players.Length);
             foreach (TourManager tm in tms)
             {
+                print(tm.name);
                 if (!tm.Equals(this))
                 {
                     Destroy(tm.gameObject);
+                }
+            }
+
+            GameObject[] uis = GameObject.FindGameObjectsWithTag("UI");
+
+            foreach (GameObject go in uis) {
+                if (!go.Equals(this.ui)) {
+                    Destroy(go);
                 }
             }
         }
