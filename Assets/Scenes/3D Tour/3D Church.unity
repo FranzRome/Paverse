@@ -1401,6 +1401,8 @@ GameObject:
   m_Component:
   - component: {fileID: 558760665}
   - component: {fileID: 558760666}
+  - component: {fileID: 558760669}
+  - component: {fileID: 558760668}
   - component: {fileID: 558760667}
   m_Layer: 0
   m_Name: pianoforte
@@ -1446,8 +1448,8 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -355032987805239910, guid: e61a8289dfb39d94bb52358c638aac7d, type: 3}
---- !u!65 &558760667
-BoxCollider:
+--- !u!135 &558760667
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1465,8 +1467,50 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 112.5, y: 112.09, z: 33.6}
-  m_Center: {x: 0, y: 12.1, z: 14.21}
+  m_Radius: 32.86
+  m_Center: {x: 16, y: -17.14, z: 0}
+--- !u!135 &558760668
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558760664}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 34.8
+  m_Center: {x: -20.62, y: -12.93, z: 0}
+--- !u!135 &558760669
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558760664}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 37.3
+  m_Center: {x: 12.6, y: 32.1, z: 0}
 --- !u!1 &603926383 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e61a8289dfb39d94bb52358c638aac7d, type: 3}
