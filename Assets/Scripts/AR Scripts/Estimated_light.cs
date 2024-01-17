@@ -6,7 +6,7 @@ public class Estimated_light : MonoBehaviour
 {
 
     public ARCameraManager arcamman;
-    public TMP_Text brightness;
+    //public TMP_Text brightness;
     Light our_light;
 
     void OnEnable()
