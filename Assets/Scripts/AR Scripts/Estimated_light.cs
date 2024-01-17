@@ -32,8 +32,8 @@ public class Estimated_light : MonoBehaviour
         {
             //brightness.text = $"Color_value:{args.lightEstimation.mainLightColor.Value}";
             our_light.color = args.lightEstimation.mainLightColor.Value;
-            float average_brightness = 0.2126f * our_light.color.r + 0.7152f * our_light.color.g + 0.0722f * our_light.color.b;
-            brightness.text = "Intesità di luce: " +  average_brightness.ToString();
+            //float average_brightness = 0.2126f * our_light.color.r + 0.7152f * our_light.color.g + 0.0722f * our_light.color.b;
+            //brightness.text = "Intesità di luce: " +  average_brightness.ToString();
         }
     }
 }

@@ -607,6 +607,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeScene
       objectReference: {fileID: 0}
+    - target: {fileID: 2973316077477836908, guid: dc0c066fd4bc7d14e874d1a92b9719de, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2973316077477836908, guid: dc0c066fd4bc7d14e874d1a92b9719de, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3476000563045555162, guid: dc0c066fd4bc7d14e874d1a92b9719de, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -646,6 +654,10 @@ PrefabInstance:
     - target: {fileID: 7143729173199098448, guid: dc0c066fd4bc7d14e874d1a92b9719de, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeSpawnPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7205318925981857772, guid: dc0c066fd4bc7d14e874d1a92b9719de, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503687156290092878, guid: dc0c066fd4bc7d14e874d1a92b9719de, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
