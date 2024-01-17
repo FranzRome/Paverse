@@ -1996,6 +1996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI 3D Tour Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7895162934749729163, guid: ae4c28ab4cb7a314091e9d8ba40080de, type: 3}
+      propertyPath: m_TagString
+      value: UI
+      objectReference: {fileID: 0}
     - target: {fileID: 8589404199046184675, guid: ae4c28ab4cb7a314091e9d8ba40080de, type: 3}
       propertyPath: m_Pivot.x
       value: 0
