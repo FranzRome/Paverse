@@ -16,13 +16,14 @@ public class Manager : MonoBehaviour
 
     void Start()
     {
-        //ApplicationChrome.statusBarState = ApplicationChrome.States.Visible;
-        //ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
-        //Screen.fullScreen = false;
+        ApplicationChrome.statusBarState = ApplicationChrome.States.Visible;
+        ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
+        Screen.fullScreen = false;
 
         if (SceneManager.GetActiveScene().name.Contains("3D"))
         {
             Screen.orientation = ScreenOrientation.LandscapeRight;
+            Screen.fullScreen = true;
         } 
         else
         {
@@ -114,6 +115,8 @@ public class Manager : MonoBehaviour
         Screen.fullScreen = true;
         StartCoroutine(Load3DScene_Coroutine(scene_name));
 
+        //ApplicationChrome.statusBarState = ApplicationChrome.States.Hidden;
+        //ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
 
     }
 

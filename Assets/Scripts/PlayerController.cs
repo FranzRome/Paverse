@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
 
     // Movement enabled
     private bool canMove;
+    private bool launchScene;
 
     void Start()
     {
@@ -44,6 +45,7 @@ public class PlayerController : MonoBehaviour
         scaledRotationSpeed = rotationSpeed / ((Screen.width) * 0.01f); //TODO Implement
         //Debug.Log(scaledRotationSpeed);
         canMove = true;
+        launchScene = false;
 
 #if UNITY_ANDROID || UNITY_IOS
     Debug.Log("Mobile");
@@ -149,6 +151,47 @@ public class PlayerController : MonoBehaviour
     {
         print("Destination: " + destination);
         SceneManager.LoadSceneAsync(destination);
+    }
+
+    public void Load3dScene(string destination)
+    {
+        Screen.orientation = ScreenOrientation.LandscapeRight;
+        Screen.fullScreen = true;
+        this.destination = destination;
+        animation.Play();
+        StartCoroutine(Load3DScene_Coroutine());
+
+        //ApplicationChrome.statusBarState = ApplicationChrome.States.Hidden;
+        //ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
+
+    }
+
+    public IEnumerator Load3DScene_Coroutine()
+    {
+
+
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(destination);
+        asyncOperation.allowSceneActivation = false;
+        //Debug.Log("Pro :" + asyncOperation.progress);
+        while (!asyncOperation.isDone)
+        {
+            if (asyncOperation.progress >= 0.9f && launchScene)
+            {
+                asyncOperation.allowSceneActivation = true;
+                DisableLaunchScene();
+            }
+            yield return null;
+        }
+    }
+
+    public void EnableLaunchScene()
+    {
+        launchScene = true;
+    }
+
+    public void DisableLaunchScene()
+    {
+        launchScene = false;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

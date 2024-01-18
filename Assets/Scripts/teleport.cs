@@ -13,7 +13,8 @@ public class Teleport : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<Rigidbody>().velocity = Vector3.zero;  // Stops Player Movement
-            other.GetComponent<PlayerController>().BeginTeleport(destination);
+            //other.GetComponent<PlayerController>().BeginTeleport(destination);
+            other.GetComponent<PlayerController>().Load3dScene(destination);
         }
     }
 }
