@@ -2,6 +2,7 @@
  * {
     user-select: none;
     box-sizing: border-box;
+    text-align: center;
  }
 
  html {
@@ -16,7 +17,7 @@
  }
 
  h1 {
-    border-bottom: 5px solid #0e2b25;
+   color: black;
     margin-bottom: 32px;
     font-weight: 600;
  }
@@ -379,14 +380,14 @@
        position: absolute;
        left: 0px;
        bottom: 0px;
-       border-radius: 8px;
+       border-radius: 0px 0px 0px 16px;
     }
 
     .blob-green {
        position: absolute;
        right: 0px;
        top: 0px;
-       border-radius: 16px;
+       border-radius: 0px 16px 0px 0px;
     }
 
     .welcome {
