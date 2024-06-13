@@ -2,7 +2,6 @@
  * {
     user-select: none;
     box-sizing: border-box;
-    text-align: center;
  }
 
  html {
@@ -17,9 +16,13 @@
  }
 
  h1 {
-   color: black;
+    color: black;
     margin-bottom: 32px;
     font-weight: 600;
+ }
+
+ img {
+   text-align: center !important;
  }
 
  .home-section {
@@ -36,14 +39,20 @@
 
  .bottom-section {
     position: relative;
-    padding-left: 2vw;
-    padding-top: 0.5vw;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 98px;
+    height: 120px;
     background: #00131a;
     color: white;
+ }
+
+ .bottom-section-text {
+    padding: 0px !important;
  }
 
  .nav-bar {
@@ -126,12 +135,14 @@
     margin: 0px;
     font-size: 32px;
     font-weight: 600;
+    color: black;
  }
 
  .welcome-text2 {
     margin: 0px;
     font-size: 26px;
-    font-weight: medium;
+    font-weight: 500;
+    color: black;
  }
 
  .try-web-app-button {
@@ -227,11 +238,11 @@
  }
 
  .profile-cards-container>div:nth-child(2) {
-   transition-delay: 500ms;
+    transition-delay: 500ms;
  }
- 
+
  .profile-cards-container>div:nth-child(3) {
-   transition-delay: 1000ms;
+    transition-delay: 1000ms;
  }
 
  .hidden {
@@ -247,9 +258,9 @@
     transform: translateX(0);
  }
 
-.fast-transition {
-   transition: 0.3s
-}
+ .fast-transition {
+    transition: 0.3s
+ }
 
  .profile-card {
     padding: 2vw;
