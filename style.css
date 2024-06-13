@@ -1,4 +1,9 @@
- /* DESKTOP */
+@font-face {
+   font-family: JosefinSans;
+   src: url(./Fonts/RedHatDisplay-Regular.ttf);
+ }
+
+/* DESKTOP */
  * {
     user-select: none;
     box-sizing: border-box;
@@ -10,10 +15,12 @@
 
  body {
     margin: 0px;
-    font-family: "Inter";
+    font-size: 1vw;
     background-color: #EAEAEA;
     background-position: 0% 2%;
     background-image: url(./Assets/Images/Website/circle-bg.svg);
+    background-attachment: fixed;
+    font-family: 'JosefinSans';
  }
 
  h1 {
@@ -41,6 +48,37 @@
    background-color: rgba(225, 225, 225, 0.6)!important;
 }
 
+.glass {
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
+   backdrop-filter: saturate(2) blur(16px);
+   background-color: rgba(225, 225, 225, 0.6)!important;
+}
+
+.red-glass {
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
+   backdrop-filter: saturate(2) blur(16px);
+   background-color: rgba(140, 50, 40, 0.33)!important;
+   
+}
+
+.green-glass {
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
+   backdrop-filter: saturate(1.05) blur(16px);
+   background-color: rgba(87, 158, 135, 0.33)!important;
+}
+
+.blue-glass {
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
+   backdrop-filter: saturate(1.15) blur(16px);
+   background-color: rgba(90, 170, 186, 0.33)!important;
+}
+
+.deep-blue-glass {
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
+   backdrop-filter: saturate(2) blur(16px);
+   background-color: rgba(82, 74, 114, 0.6)!important;
+}
+
  .home-section {
     position: relative;
     width: 100vw;
@@ -55,20 +93,21 @@
 
  .bottom-section {
     position: relative;
-    padding-left: 32px;
+    padding-left: 86px;
     padding-right: 32px;
-    padding-top: 16px;
+    padding-top: 32px;
     padding-bottom: 16px;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 120px;
-    background: #00131a;
-    color: white;
+    height: 160px;
+    border-radius: 150px 150px 0px 0px;
+    color: black;
  }
 
  .bottom-section-text {
     padding: 0px !important;
+    user-select: text;
  }
 
  .nav-bar {
@@ -120,7 +159,6 @@
     width: 70vw;
     height: 298px;
     border-radius: 16px 16px 16px 16px;
-    filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.6));
     background: white;
  }
 
@@ -221,9 +259,9 @@
     transform: translateX(-50%);
     top: 19px;
     width: 260px;
-    background: #00678B;
+    background: #327188;
     border-radius: 8px;
-    filter: drop-shadow(4px 6px 12px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(4px 8px 4px rgba(0, 0, 0, 0.2));
  }
 
  .qr-code {
@@ -283,10 +321,10 @@
     padding: 2vw;
     width: 16vw;
     aspect-ratio: 2/3;
-    /*background: white;*/
+    padding: 10px 15px;
+    background: white;
     border-radius: 6%;
     filter: drop-shadow(4px 8px 4px rgba(0, 0, 0, 0.2));
-    background-image: url(./Assets/Images/Website/Card\ Waves.svg);
  }
 
  .profile-card:hover {
@@ -305,7 +343,7 @@
     border-radius: 50%;
     border: 4px solid #00678B;
     margin-bottom: 1vw;
-    filter: drop-shadow(12px 12px 24px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(4px 8px 4px rgba(0, 0, 0, 0.2));
  }
 
  .profile-card-name {
@@ -315,7 +353,7 @@
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
-    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(4px 8px 4px rgba(0, 0, 0, 0.2));
  }
 
  .profile-card-role {
@@ -325,7 +363,7 @@
     font-weight: normal;
     text-align: center;
     font-style: italic;
-    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(4px 8px 4px rgba(0, 0, 0, 0.2));
  }
 
  @keyframes wave {
@@ -514,7 +552,6 @@
        background: white;
        border-radius: 6%;
        filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.6));
-       background-image: url('./Assets/Images/Website/Card\ Waves.svg');
        background-position: 50% 30%;
        transition: 0.3s;
     }
@@ -526,7 +563,7 @@
     .profile-card-name {
        display: block;
        width: 100%;
-       font-size: 1.6rem;
+       font-size: 1.3rem;
        font-weight: bold;
        text-align: center;
        text-decoration: underline;
@@ -535,7 +572,7 @@
     .profile-card-role {
        display: block;
        width: 100%;
-       font-size: 1.3rem;
+       font-size: 1.15rem;
        font-weight: normal;
        text-align: center;
        text-decoration: none;
