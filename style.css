@@ -11,7 +11,8 @@
  body {
     margin: 0px;
     font-family: "Inter";
-    background-color: #EBEBEB;
+    background-color: #EAEAEA;
+    background-position: 0% 2%;
     background-image: url(./Assets/Images/Website/circle-bg.svg);
  }
 
@@ -24,6 +25,21 @@
  img {
    text-align: center !important;
  }
+
+.custom-navbar {
+   position: fixed;
+   top: 20px;
+   left: 50%;
+   transform: translate(-50%);
+   width: 90%;
+   overflow: hidden;
+   z-index: 2;
+   padding: 10px 20px;
+   border-radius: 100px;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
+   backdrop-filter: saturate(2) blur(16px);
+   background-color: rgba(225, 225, 225, 0.6)!important;
+}
 
  .home-section {
     position: relative;
@@ -100,12 +116,12 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 128px;
+    top: 150px;
     width: 70vw;
     height: 298px;
     border-radius: 16px 16px 16px 16px;
     filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.6));
-    background: #dedede;
+    background: white;
  }
 
  .blob-red {
@@ -226,6 +242,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-top: 42px;
     gap: 4vw
  }
 
@@ -268,13 +285,13 @@
     aspect-ratio: 2/3;
     /*background: white;*/
     border-radius: 6%;
-    filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(4px 8px 4px rgba(0, 0, 0, 0.2));
     background-image: url(./Assets/Images/Website/Card\ Waves.svg);
  }
 
  .profile-card:hover {
     transform: scale(1.075, 1.075);
-    filter: drop-shadow(4px 8px 18px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.2));
  }
 
  .profile-card>img {
@@ -379,12 +396,12 @@
        position: absolute;
        left: 50%;
        transform: translateX(-50%);
-       top: 128px;
+       top: 150px;
        width: 70vw;
        height: 350px;
        border-radius: 8px 8px 8px 8px;
        filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.6));
-       background: #dedede;
+       background: white;
     }
 
     .blob-red {
