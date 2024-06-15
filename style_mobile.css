@@ -1,7 +1,8 @@
 /* MOBILE */
 @media only screen and (max-width: 768px) {
-   .nav-bar {
+   .custom-nav-bar {
       position: sticky;
+      justify-content: center;
       top: 0;
       bottom: 0;
       width: 100%;
@@ -56,14 +57,14 @@
       position: absolute;
       left: 0px;
       bottom: 0px;
-      border-radius: 0px 0px 0px 16px;
+      border-radius: 0px 0px 0px 8px;
    }
 
    .blob-green {
       position: absolute;
       right: 0px;
       top: 0px;
-      border-radius: 0px 16px 0px 0px;
+      border-radius: 0px 8px 0px 0px;
    }
 
    .welcome {
@@ -155,25 +156,26 @@
    }
 
    .profile-card {
+      overflow: hidden;
       margin: 3vw;
-      padding: 2vw;
+      padding: 6vw 2vw 2vw 2vw;
       width: 50vw;
       aspect-ratio: 2/3;
       background: white;
       border-radius: 6%;
-      filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.6));
       background-position: 50% 30%;
       transition: 0.3s;
    }
 
    .profile-card>img {
       width: 80%;
+      margin-bottom: 24px;
    }
 
    .profile-card-name {
       display: block;
       width: 100%;
-      font-size: 1.3rem;
+      font-size: 4rem;
       font-weight: bold;
       text-align: center;
       text-decoration: underline;
@@ -182,7 +184,7 @@
    .profile-card-role {
       display: block;
       width: 100%;
-      font-size: 1.15rem;
+      font-size: 2.5rem;
       font-weight: normal;
       text-align: center;
       text-decoration: none;

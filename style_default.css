@@ -11,11 +11,13 @@
 
 html {
    scroll-behavior: smooth;
+   width: 100vw;
+   margin: 0px;
+   font-size: 1.2vw;
 }
 
 body {
    margin: 0px;
-   font-size: 1vw;
    background-color: #EAEAEA;
    background-position: 0% 2%;
    background-image: url(./Assets/Images/Website/circle-bg.svg);
@@ -58,16 +60,16 @@ footer {
    background-color: #101010;
 }
 
-footer>h2 {
-   padding: 0px !important;
+.footer-title {
+   padding: 0px;
    user-select: text;
-   font-size: 0.9rem;
+   font-size: 18px;
 }
 
-.footer-text {
-   padding: 0px !important;
+.footer-content {
+   padding: 0px;
    user-select: text;
-   font-size: 0.9rem;
+   font-size: 14px;
 }
 
 .custom-navbar {
@@ -94,7 +96,7 @@ footer>h2 {
 .red-glass {
    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
    backdrop-filter: saturate(2) blur(16px);
-   background-color: rgba(140, 50, 40, 0.33) !important;
+   background-color: rgba(194, 55, 40, 0.3) !important;
 
 }
 
@@ -110,10 +112,23 @@ footer>h2 {
    background-color: rgba(90, 170, 186, 0.33) !important;
 }
 
-.deep-blue-glass {
+.red-glass>img {
    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
    backdrop-filter: saturate(2) blur(16px);
-   background-color: rgba(82, 74, 114, 0.6) !important;
+   border: solid 3px rgba(194, 55, 40, 0.6);
+
+}
+
+.green-glass>img {
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
+   backdrop-filter: saturate(1.05) blur(16px);
+   border: solid 3px rgba(31, 108, 91, 0.6);
+}
+
+.blue-glass>img {
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
+   backdrop-filter: saturate(1.15) blur(16px);
+   border: solid 3px rgba(50, 113, 136, 0.6);
 }
 
 .home-section {
@@ -336,8 +351,8 @@ footer>h2 {
 }
 
 .profile-card {
-   padding: 2vw;
-   width: 16vw;
+   padding: 4vw 2vw 2vw 2vw;
+   width: 18vw;
    aspect-ratio: 2/3;
    padding: 10px 15px;
    background: white;
@@ -352,22 +367,20 @@ footer>h2 {
 
 .profile-card>img {
    aspect-ratio: 1/1;
+   width: 80%;
    object-fit: cover;
    position: relative;
    left: 50%;
    transform: translateX(-50%);
    flex-basis: 50%;
-   height: 50%;
    border-radius: 50%;
-   border: 4px solid #00678B;
-   margin-bottom: 1vw;
    filter: drop-shadow(4px 8px 4px rgba(0, 0, 0, 0.2));
 }
 
 .profile-card-name {
    display: block;
    width: 100%;
-   font-size: 1.6vw;
+   font-size: 1.5rem;
    font-weight: bold;
    text-align: center;
    text-decoration: underline;
@@ -377,7 +390,7 @@ footer>h2 {
 .profile-card-role {
    display: block;
    width: 100%;
-   font-size: 1.2rem;
+   font-size: 1.4rem;
    font-weight: normal;
    text-align: center;
    font-style: italic;
@@ -560,18 +573,6 @@ footer>h2 {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-   }
-
-   .profile-card {
-      margin: 3vw;
-      padding: 2vw;
-      width: 50vw;
-      aspect-ratio: 2/3;
-      background: white;
-      border-radius: 6%;
-      filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.6));
-      background-position: 50% 30%;
-      transition: 0.3s;
    }
 
    .profile-card>img {
