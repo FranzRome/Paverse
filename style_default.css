@@ -3,10 +3,25 @@
    src: url(./Fonts/RedHatDisplay-Regular.ttf);
 }
 
-/* DESKTOP */
+/* BOOTSTRAP OVVERRIDES */
+#bootstrap-ovverrides * {
+   margin: 0;
+ }
+
+#bootstrap-ovverrides p {
+   margin: 0;
+   margin-bottom: 0;
+ }
+
+ #bootstrap-ovverrides footer {
+   line-height: 16px;
+ }
+
+/* DEFAULT */
 * {
    user-select: none;
    box-sizing: border-box;
+   margin: 0;
 }
 
 html {
@@ -60,19 +75,11 @@ footer {
    background-color: #101010;
 }
 
-.footer-title {
-   padding: 0px;
-   user-select: text;
-   font-size: 18px;
-}
-
-.footer-content {
-   padding: 0px;
-   user-select: text;
-   font-size: 14px;
-}
-
-.custom-navbar {
+.custom-nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   align-items: center;
    position: fixed;
    top: 20px;
    left: 50%;
@@ -85,6 +92,14 @@ footer {
    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
    backdrop-filter: saturate(2) blur(16px);
    background-color: rgba(225, 225, 225, 0.6) !important;
+}
+
+.custom-nav .pen-logo {
+   height: 64px;
+}
+
+.custom-nav .nav-title {
+   padding: 0 0 0 1rem;
 }
 
 .glass {
@@ -137,25 +152,6 @@ footer {
    height: 860px;
 }
 
-#who-section {
-   position: relative;
-   width: 100vw;
-   padding: 8vw 12vw;
-}
-
-.nav-bar {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   width: 100%;
-   height: 128px;
-   background: #C5C5C5;
-}
-
-.pen-logo {
-   height: 64px;
-}
-
 .button {
    display: flex;
    align-items: center;
@@ -172,9 +168,14 @@ footer {
 }
 
 .who {
-   right: 24vw;
-   top: 50%;
-   transform: translateY(-50%);
+   position: relative;
+   width: 100vw;
+   padding: 8vw 16vw;
+}
+
+.who h2 {
+   text-align: center;
+   border-bottom: 4px solid #212529;
 }
 
 .contacts {
@@ -188,7 +189,7 @@ footer {
    position: absolute;
    left: 50%;
    transform: translateX(-50%);
-   top: 150px;
+   top: 200px;
    width: 70vw;
    height: 298px;
    border-radius: 16px 16px 16px 16px;
@@ -261,7 +262,7 @@ footer {
    display: flex;
    flex-direction: column;
    position: absolute;
-   top: 463px;
+   top: 520px;
    left: 50%;
    transform: translateX(-50%);
    width: 400px;
@@ -274,13 +275,12 @@ footer {
 }
 
 .mobile-app-text1 {
-   margin: 0px;
    font-size: 26px;
    font-weight: regular;
 }
 
 .mobile-app-text2 {
-   margin: 0px;
+   padding-top: 16px;
    font-size: 26px;
    font-weight: bold;
 }
@@ -290,7 +290,7 @@ footer {
    aspect-ratio: 1/1;
    left: 50%;
    transform: translateX(-50%);
-   top: 19px;
+   top: 8px;
    width: 260px;
    background: #327188;
    border-radius: 8px;
@@ -313,7 +313,7 @@ footer {
    flex-direction: column;
    justify-content: space-around;
    align-items: center;
-   padding-top: 42px;
+   padding-top: 24px;
    gap: 4vw
 }
 
@@ -397,6 +397,19 @@ footer {
    filter: drop-shadow(4px 8px 4px rgba(0, 0, 0, 0.2));
 }
 
+.footer-title {
+   padding-bottom: 4px;
+   user-select: text;
+   font-size: 18px;
+}
+
+.footer-content {
+   padding: 0px;
+   user-select: text;
+   font-size: 14px;
+}
+
+/* ANIMATION */
 @keyframes wave {
    0% {
       margin-left: 0;
@@ -416,184 +429,5 @@ footer {
 
    50% {
       transform: translate3d(0, 5px, 0);
-   }
-}
-
-/* MOBILE */
-@media only screen and (max-width: 768px) {
-   .nav-bar {
-      position: sticky;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-      height: 80px;
-      background: #C5C5C5;
-      z-index: 1;
-   }
-
-   .button {
-      position: absolute;
-      width: 20vw;
-      height: 32px;
-      color: black;
-      background-color: #fafafa;
-      font-size: 14px;
-      font-weight: medium;
-      text-align: center;
-      border-bottom: 2px solid #101010
-   }
-
-   .who {
-      right: 42vw;
-      top: 50%;
-      transform: translateY(-50%);
-   }
-
-   .contacts {
-      right: 16vw;
-      top: 50%;
-      transform: translateY(-50%);
-   }
-
-   .home-section {
-      position: relative;
-      width: 100vw;
-      height: 500px;
-   }
-
-   .web-app {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 150px;
-      width: 70vw;
-      height: 350px;
-      border-radius: 8px 8px 8px 8px;
-      filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.6));
-      background: white;
-   }
-
-   .blob-red {
-      position: absolute;
-      left: 0px;
-      bottom: 0px;
-      border-radius: 0px 0px 0px 16px;
-   }
-
-   .blob-green {
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      border-radius: 0px 16px 0px 0px;
-   }
-
-   .welcome {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      top: 10%;
-      text-align: center;
-   }
-
-   .welcome-text1 {
-      margin: 0px;
-      font-size: 6vw;
-      font-weight: 600;
-   }
-
-   .welcome-text2 {
-      display: none;
-   }
-
-   .try-web-app-button {
-      display: none;
-   }
-
-   .try-web-app-text {
-      display: none;
-   }
-
-   .download-mobile-app-button {
-      display: block;
-      position: absolute;
-      left: 50%;
-      top: 60%;
-      transform: translate(-50%, -50%);
-      width: 50%;
-      height: 60px;
-      background: black;
-      box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
-      text-decoration: none;
-      padding: 0px 0px;
-      border-radius: 50px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.5s ease;
-   }
-
-
-
-   .download-mobile-app-button:hover {
-      background: rgba(11, 17, 18, 1);
-      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
-   }
-
-
-   .download-mobile-app-text {
-      margin: 0px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 100%;
-      transform: translate(-50%, -50%);
-      font-size: 4vw;
-      font-weight: bold;
-      text-align: center;
-      color: white;
-   }
-
-   .mobile-app {
-      display: none;
-   }
-
-   .mobile-app-text1 {
-      margin: 0px;
-      font-size: 26px;
-      font-weight: regular;
-   }
-
-   .mobile-app-text2 {
-      margin: 0px;
-      font-size: 26px;
-      font-weight: bold;
-   }
-
-   .profile-cards-container>div {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-   }
-
-   .profile-card>img {
-      width: 80%;
-   }
-
-   .profile-card-name {
-      display: block;
-      width: 100%;
-      font-size: 1.3rem;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: underline;
-   }
-
-   .profile-card-role {
-      display: block;
-      width: 100%;
-      font-size: 1.15rem;
-      font-weight: normal;
-      text-align: center;
-      text-decoration: none;
    }
 }
