@@ -18,5 +18,5 @@ Images
 <img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/content-menu.jpeg" width="200" />
 <img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/content-listview.jpeg" width="200" />
 <img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/detail-page.jpeg" width="200" />
-<img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/3D-page.jpeg" width="200" />
+<img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/3D-page.jpeg" width="600" />
 <img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/ar-page.jpeg" width="200" />
