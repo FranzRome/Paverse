@@ -8,3 +8,10 @@ Quest'applicazione per Android è stata realizzata per la fondazione Cesare Pave
 - Guida ai luoghi Pavesiani
 - Tour 3D
 - Vista in realtà aumentata degli oggetti appartenuti a Cesare Pavese
+
+
+
+Images
+
+![WhatsApp Image 2024-06-21 at 22 38 41](https://github.com/WenJunZheng2001/Paverse/assets/159193779/4f4321a4-9bfe-4c38-8b68-157428fe454f)
+![WhatsApp Image 2024-06-21 at 22 38 41 (1)](https://github.com/WenJunZheng2001/Paverse/assets/159193779/9635b0ad-f973-4114-95a4-49f9f3a6cc1f)
