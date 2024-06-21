@@ -13,6 +13,10 @@ Quest'applicazione per Android è stata realizzata per la fondazione Cesare Pave
 
 Images
 
-![WhatsApp Image 2024-06-21 at 22 38 41](https://github.com/WenJunZheng2001/Paverse/assets/159193779/4f4321a4-9bfe-4c38-8b68-157428fe454f)
-![WhatsApp Image 2024-06-21 at 22 38 41 (1)](https://github.com/WenJunZheng2001/Paverse/assets/159193779/9635b0ad-f973-4114-95a4-49f9f3a6cc1f)
+
+<img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/main-menu.jpeg" width="200" />
+<img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/content-menu.jpeg" width="200" />
+<img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/content-listview.jpeg" width="200" />
+<img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/detail-page.jpeg" width="200" />
+<img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/3D-page.jpeg" width="200" />
 <img src="https://github.com/WenJunZheng2001/Paverse/blob/main/Assets/Images/read_me-images/ar-page.jpeg" width="200" />
