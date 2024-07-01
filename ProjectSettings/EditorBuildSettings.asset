@@ -15,26 +15,26 @@ EditorBuildSettings:
     path: Assets/Scenes/List/Museo Pavesiano.unity
     guid: d30125bf0d016bf40862a9d7a84009f3
   - enabled: 1
-    path: Assets/Scenes/AR/Ar Scene PlaneObject.unity
-    guid: d54197ccf9e494f4abd1591bbf10d8e9
-  - enabled: 1
     path: Assets/Scenes/List/Casa Pavese.unity
     guid: 71ae65f32212a214e9207faa90b49e95
   - enabled: 1
     path: Assets/Scenes/List/Casa Nuto.unity
     guid: 256ce78411d6b6f47a54593823dfd028
   - enabled: 1
-    path: Assets/Scenes/3D Tour/3D Nuto.unity
-    guid: 6218613b5bb92ff4cb257d008f033183
-  - enabled: 1
     path: Assets/Scenes/3D Tour/3D Church.unity
     guid: 1172cbcffb9496a4994addf7f982a617
+  - enabled: 1
+    path: Assets/Scenes/3D Tour/3D Nuto.unity
+    guid: 6218613b5bb92ff4cb257d008f033183
   - enabled: 1
     path: Assets/Scenes/3D Tour/3D Museum.unity
     guid: 375d90849afa78e468a1992c8fc78315
   - enabled: 1
     path: Assets/Scenes/3D Tour/3D Room.unity
     guid: ec8264356f0c491409da6ae24e299df0
+  - enabled: 1
+    path: Assets/Scenes/AR/Ar Scene PlaneObject.unity
+    guid: d54197ccf9e494f4abd1591bbf10d8e9
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f9e97b888f7b8ad498943aec8fe66e62, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 657edd4a49fec1c4e9270d4d65a41527, type: 2}
