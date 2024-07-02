@@ -167,7 +167,7 @@
       transition: 0.3s;
    }
 
-   .profile-card>img {
+   .profile-card-img {
       width: 80%;
       margin-bottom: 24px;
    }

@@ -127,20 +127,20 @@ footer {
    background-color: rgba(90, 170, 186, 0.33) !important;
 }
 
-.red-glass>img {
+.red-glass img {
    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
    backdrop-filter: saturate(2) blur(16px);
    border: solid 3px rgba(194, 55, 40, 0.6);
 
 }
 
-.green-glass>img {
+.green-glass img {
    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
    backdrop-filter: saturate(1.05) blur(16px);
    border: solid 3px rgba(31, 108, 91, 0.6);
 }
 
-.blue-glass>img {
+.blue-glass img {
    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px, rgba(0, 0, 0, 0.08) 0px 2px 4px -1px;
    backdrop-filter: saturate(1.15) blur(16px);
    border: solid 3px rgba(50, 113, 136, 0.6);
@@ -365,7 +365,7 @@ footer {
    filter: drop-shadow(4px 8px 12px rgba(0, 0, 0, 0.2));
 }
 
-.profile-card>img {
+.profile-card-img {
    aspect-ratio: 1/1;
    width: 80%;
    object-fit: cover;
