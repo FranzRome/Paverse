@@ -222,14 +222,7 @@ footer {
 .welcome-text1 {
    margin: 0px;
    font-size: 32px;
-   font-weight: 600;
-   color: black;
-}
-
-.welcome-text2 {
-   margin: 0px;
-   font-size: 26px;
-   font-weight: 500;
+   font-weight: normal;
    color: black;
 }
 
