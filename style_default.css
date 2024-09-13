@@ -25,8 +25,8 @@
 }
 
 html {
-   scroll-behavior: smooth;
-   width: 100vw;
+   /*scroll-behavior: smooth;*/
+   /*width: 100vw;*/
    margin: 0px;
    font-size: 1.2vw;
 }
