@@ -11,3 +11,10 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Parallax effect
+setInterval(() => {
+   document.body.style.backgroundPosition = '0%' + window.scrollY/5 +'%';
+},
+10
+);
