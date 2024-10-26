@@ -388,26 +388,3 @@ footer {
    user-select: text;
    font-size: 14px;
 }
-
-/* ANIMATION */
-@keyframes wave {
-   0% {
-      margin-left: 0;
-   }
-
-   100% {
-      margin-left: -1600px;
-   }
-}
-
-@keyframes swell {
-
-   0%,
-   100% {
-      transform: translate3d(0, -25px, 0);
-   }
-
-   50% {
-      transform: translate3d(0, 5px, 0);
-   }
-}
