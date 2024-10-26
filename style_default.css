@@ -31,7 +31,7 @@ body {
    background-image: url(./Assets/Images/Website/circle-bg.svg);
    background-attachment: fixed;
    font-family: 'JosefinSans';
-   transition: background-position 0.2s;
+   transition: background-position 0.1s;
 }
 
 h1 {
