@@ -12,6 +12,7 @@
    <meta name="description"
       content="sito per la presentazione dei un'applicazione web e mobile su cesare pavese e per il suo download" />
    <title>App Cesare Pavese</title>
+   <link rel="icon" type="image/x-icon" href="./Assets/Images/Website/pen_logo.png">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
@@ -23,14 +24,19 @@
    <script defer src="script.js"></script>
 </head>
 
-<body id="bootstrap-ovverrides">
-   <nav class="custom-nav glass">
-      <img src="Assets/Images/Website/pen_logo.png" alt="Logo" class="pen-logo">
-      <h1 class="nav-title active" href="#" style="margin: 0;">Paverse</h1>
+<body>
+   <nav class="glass">
+      <img src="Assets/Images/Website/pen_logo.png" alt="Logo" id="logo">
+      <h1 class="title active" href="#" style="margin: 0;">Paverse</h1>
+      <div class="nav-links">
+         <a href="#welcome">Welcome</a>
+         <a href="#welcome">App</a>
+         <a href="#who">Who We Are</a>
+      </div>
    </nav>
 
    <header>
-      <div class="web-app glass">
+      <section class="glass" id="welcome">
          <img src="Assets/Images/Website/Red Blob.svg" alt="Red Blob" class="blob-red" />
          <img src="Assets/Images/Website/Green Blob.svg" alt="Red Blob" class="blob-green" />
          <h1 class="welcome">
@@ -41,19 +47,19 @@
          <a href="app-index.html" class="try-web-app-button">
             <p class="try-web-app-text">Prova la web app</p>
          </a>
-         <a href="Paverse.apk" class="pill button download-mobile-app-button">
-            <span class="download-mobile-app-text">Scarica l'App</span>
+         <a href="Paverse.apk" class="button download-mobile-app-button">
+            <p class="download-mobile-app-text">Scarica l'App</p>
          </a>
-      </div>
-      <div class="mobile-app">
+      </section>
+      <section class="mobile-app">
          <p class="mobile-app-text1">oppure</p><br>
          <p class="mobile-app-text2">Scarica la Versione Mobile</p>
          <div class="qr-container">
             <img src="Assets/Images/Website/QR Code.png" alt="" class="qr-code">
          </div>
-      </div>
+      </section>
    </header>
-   <main class="who">
+   <main id="who">
       <h2 id="team"> Il Team </h2>
       <section class="profile-cards-container">
          <div>

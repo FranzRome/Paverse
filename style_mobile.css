@@ -1,45 +1,20 @@
-/* MOBILE */
 @media only screen and (max-width: 768px) {
-   .custom-nav-bar {
-      position: sticky;
-      justify-content: center;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-      height: 80px;
-      background: #C5C5C5;
-      z-index: 1;
-   }
 
-   .button {
-      position: absolute;
-      width: 20vw;
-      height: 32px;
-      color: black;
-      background-color: #fafafa;
-      font-size: 14px;
-      font-weight: medium;
-      text-align: center;
-      border-bottom: 2px solid #101010
-   }
+   /*#region General */
 
-   header {
-      position: relative;
-      width: 100vw;
-      height: 500px;
-   }
 
-   .web-app {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 150px;
-      width: 70vw;
-      height: 350px;
-      padding: 6vw 3vw;
+  /*#endregion*/
+
+
+  /*#region App Section */
+
+   #welcome {
       border-radius: 8px 8px 8px 8px;
-      filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.6));
-      background: white;
+   }
+
+   .welcome {
+      text-align: center;
+      font-size: 2.6vw;
    }
 
    .blob-red {
@@ -56,11 +31,6 @@
       border-radius: 0px 8px 0px 0px;
    }
 
-   .welcome {
-      font-size: 5.6vw;
-      font-weight: 600;
-   }
-
    .try-web-app-button {
       display: none;
    }
@@ -71,61 +41,27 @@
 
    .download-mobile-app-button {
       display: block;
-      position: absolute;
-      left: 50%;
-      top: 60%;
-      transform: translate(-50%, -50%);
-      width: 50%;
-      height: 60px;
-      background: black;
+      background: #111;
       box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
       text-decoration: none;
-      padding: 0px 0px;
+      padding: 2vw 4vw;
       border-radius: 50px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.5s ease;
-   }
-
-   .download-mobile-app-button:hover {
-      background: rgba(11, 17, 18, 1);
-      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
    }
 
    .download-mobile-app-text {
-      margin: 0px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 100%;
-      transform: translate(-50%, -50%);
-      font-size: 4vw;
-      font-weight: bold;
-      text-align: center;
-      color: white;
+      font-size: 2.4vw;
+      font-weight: 600;
+      color: #eee;
    }
 
    .mobile-app {
       display: none;
    }
 
-   .mobile-app-text1 {
-      margin: 0px;
-      font-size: 26px;
-      font-weight: regular;
-   }
+   /*#endregion*/
 
-   .mobile-app-text2 {
-      margin: 0px;
-      font-size: 26px;
-      font-weight: bold;
-   }
 
-   .who {
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 8vw 24vw;
-   }
+   /*#region Who Section*/
 
    .profile-cards-container {
       display: flex;
@@ -145,7 +81,7 @@
       overflow: hidden;
       margin: 3vw;
       padding: 6vw 2vw 2vw 2vw;
-      width: 50vw;
+      width: 40vw;
       aspect-ratio: 2/3;
       background: white;
       border-radius: 6%;
@@ -161,7 +97,7 @@
    .profile-card-name {
       display: block;
       width: 100%;
-      font-size: 4rem;
+      font-size: 3.2rem;
       font-weight: bold;
       text-align: center;
       text-decoration: underline;
@@ -174,11 +110,19 @@
       font-weight: normal;
       text-align: center;
       text-decoration: none;
+      color:#222
    }
+
+   /*#endregion*/
+
+
+   /*#region Footer */
 
    .contacts {
       right: 2vw;
       top: 50%;
       transform: translateY(-50%);
    }
+
+   /*#endregion*/
 }
