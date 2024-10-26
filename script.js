@@ -18,7 +18,7 @@ if(navigator.userAgent === 'Mozilla/5.0 (iPhone13,2; U; CPU iPhone OS 14_0 like 
 ) {
    console.log('iPhone12');
    setInterval(() => {
-      document.body.style.backgroundPosition = '0%' + window.scrollY/70 +'%';
+      document.body.style.backgroundPosition = '0%' + window.scrollY/500 +'%';
    },
    5
    );
