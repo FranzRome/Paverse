@@ -63,6 +63,12 @@ img {
    text-align: center !important;
 }
 
+header {
+   position: relative;
+   width: 100vw;
+   height: 860px;
+}
+
 footer {
    position: relative;
    padding-left: 58px;
@@ -146,11 +152,7 @@ footer {
    border: solid 3px rgba(50, 113, 136, 0.6);
 }
 
-.home-section {
-   position: relative;
-   width: 100vw;
-   height: 860px;
-}
+
 
 .button {
    display: flex;
@@ -173,9 +175,8 @@ footer {
    padding: 8vw 16vw;
 }
 
-.who h2 {
-   text-align: center;
-   border-bottom: 4px solid #212529;
+#team {
+   font-size: 6vw;
 }
 
 .contacts {

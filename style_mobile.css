@@ -23,7 +23,7 @@
       border-bottom: 2px solid #101010
    }
 
-   .home-section {
+   header {
       position: relative;
       width: 100vw;
       height: 500px;
@@ -125,10 +125,6 @@
       left: 50%;
       transform: translateX(-50%);
       padding: 8vw 24vw;
-   }
-
-   #team {
-      font-size: 5vw;
    }
 
    .profile-cards-container {
