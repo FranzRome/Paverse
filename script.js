@@ -14,7 +14,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // Parallax effect
 setInterval(() => {
-   document.body.style.backgroundPosition = '0%' + window.scrollY/5 +'%';
+   document.body.style.backgroundPosition = '0%' + window.scrollY/3 +'%';
 },
-10
+50
 );
