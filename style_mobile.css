@@ -23,18 +23,6 @@
       border-bottom: 2px solid #101010
    }
 
-   .who {
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 8vw 24vw;
-   }
-
-   .contacts {
-      right: 2vw;
-      top: 50%;
-      transform: translateY(-50%);
-   }
-
    .home-section {
       position: relative;
       width: 100vw;
@@ -69,7 +57,7 @@
    }
 
    .welcome {
-      font-size: 6vw;
+      font-size: 5.6vw;
       font-weight: 600;
    }
 
@@ -133,6 +121,16 @@
       font-weight: bold;
    }
 
+   .who {
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8vw 24vw;
+   }
+
+   #team {
+      font-size: 5vw;
+   }
+
    .profile-cards-container {
       display: flex;
       flex-direction: column;
@@ -180,5 +178,11 @@
       font-weight: normal;
       text-align: center;
       text-decoration: none;
+   }
+
+   .contacts {
+      right: 2vw;
+      top: 50%;
+      transform: translateY(-50%);
    }
 }
