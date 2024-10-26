@@ -24,13 +24,13 @@
    }
 
    .who {
-      right: 42vw;
-      top: 50%;
-      transform: translateY(-50%);
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8vw 24vw;
    }
 
    .contacts {
-      right: 16vw;
+      right: 2vw;
       top: 50%;
       transform: translateY(-50%);
    }
@@ -48,6 +48,7 @@
       top: 150px;
       width: 70vw;
       height: 350px;
+      padding: 6vw 3vw;
       border-radius: 8px 8px 8px 8px;
       filter: drop-shadow(4px 8px 6px rgba(0, 0, 0, 0.6));
       background: white;
@@ -68,15 +69,6 @@
    }
 
    .welcome {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      top: 10%;
-      text-align: center;
-   }
-
-   .welcome-text1 {
-      margin: 0px;
       font-size: 6vw;
       font-weight: 600;
    }
@@ -107,13 +99,10 @@
       transition: 0.5s ease;
    }
 
-
-
    .download-mobile-app-button:hover {
       background: rgba(11, 17, 18, 1);
       box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
    }
-
 
    .download-mobile-app-text {
       margin: 0px;
@@ -142,6 +131,13 @@
       margin: 0px;
       font-size: 26px;
       font-weight: bold;
+   }
+
+   .profile-cards-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
    }
 
    .profile-cards-container>div {

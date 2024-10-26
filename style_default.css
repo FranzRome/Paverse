@@ -186,7 +186,12 @@ footer {
 
 
 .web-app {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    position: absolute;
+   padding: 3vw 5vw;
+   gap: 2.5vw;
    left: 50%;
    transform: translateX(-50%);
    top: 200px;
@@ -202,6 +207,7 @@ footer {
    bottom: 0px;
    border-radius: 16px;
    border-radius: 0px 0px 0px 16px;
+   z-index: -2;
 }
 
 .blob-green {
@@ -209,28 +215,14 @@ footer {
    right: 0px;
    top: 0px;
    border-radius: 0px 16px 0px 0px;
+   z-index: -1;
 }
 
 .welcome {
-   display: flex;
-   flex-direction: column;
-   position: relative;
-   top: 20px;
    text-align: center;
 }
 
-.welcome-text1 {
-   margin: 0px;
-   font-size: 32px;
-   font-weight: normal;
-   color: black;
-}
-
 .try-web-app-button {
-   position: absolute;
-   left: 50%;
-   top: 60%;
-   transform: translate(-50%, -50%);
    width: 323px;
    height: 57px;
    border-radius: 50px;
@@ -240,11 +232,6 @@ footer {
 
 .try-web-app-text {
    margin: 0px;
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   width: 100%;
-   transform: translate(-50%, -50%);
    font-size: 24px;
    font-weight: bold;
    text-align: center;
