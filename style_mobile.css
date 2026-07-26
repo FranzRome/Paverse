@@ -21,6 +21,7 @@
       position: absolute;
       left: 0px;
       bottom: 0px;
+      height: 100%;
       border-radius: 0px 0px 0px 8px;
    }
 
@@ -28,6 +29,7 @@
       position: absolute;
       right: 0px;
       top: 0px;
+      height: 100%;
       border-radius: 0px 8px 0px 0px;
    }
 
