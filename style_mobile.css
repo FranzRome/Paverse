@@ -9,12 +9,13 @@
   /*#region App Section */
 
    #welcome {
-      border-radius: 8px 8px 8px 8px;
+      text-align: center;
+      font-size: 4.5vw;
+      padding-bottom: 2.6vw;
    }
 
-   .welcome {
-      text-align: center;
-      font-size: 2.6vw;
+   #download-section {
+      border-radius: 8px 8px 8px 8px;
    }
 
    .blob-red {

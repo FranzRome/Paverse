@@ -173,13 +173,19 @@ nav {
 /*#region App Section */
 
 #welcome {
+   text-align: center;
+   font-size: 4.5vw;
+   padding-bottom: 1.6vw;
+}
+
+#download-section {
    display: flex;
    flex-direction: column;
    align-items: center;
    flex-grow: 1;
    padding: 3vw 5vw;
    gap: 2.5vw;
-   border-radius: 16px 16px 16px 16px;
+   border-radius: 0px 16px 0px 16px;
    background: white;
 }
 
@@ -201,10 +207,6 @@ nav {
    z-index: -1;
 }
 
-.welcome {
-   text-align: center;
-}
-
 .try-web-app-button {
    padding: 1.2vw 3vw;
    border-radius: 50px;
@@ -224,7 +226,7 @@ nav {
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 4vw 2vw;
+   padding: 2.5vw 3.5vw;
    text-align: center;
 }
 
@@ -232,14 +234,10 @@ nav {
    display: none;
 }
 
-.mobile-app-text1 {
-   font-size: 26px;
-   font-weight: regular;
-}
-
-.mobile-app-text2 {
-   padding-top: 16px;
-   font-size: 26px;
+.mobile-app-text {
+   padding-top: 0px;
+   padding-bottom: 1vw;
+   font-size: 2.8vw;
    font-weight: bold;
 }
 
