@@ -78,7 +78,7 @@ header {
 footer {
    padding-left: 58px;
    padding-top: 18px;
-   height: 120px;
+   height: 140px;
    color: white;
    background-color: #101010;
 }
@@ -175,7 +175,14 @@ nav {
 #welcome {
    text-align: center;
    font-size: 4.5vw;
-   padding-bottom: 1.6vw;
+   padding-bottom: 1.2vw;
+}
+
+#catchphrase {
+   padding: 0.6vw 0vw 2.8vw 0vw;
+   font-style: italic;
+   font-weight: 500;
+   color: rgb(30,30, 30);
 }
 
 #download-section {
@@ -369,7 +376,7 @@ nav {
 .footer-title {
    padding-bottom: 4px;
    user-select: text;
-   font-size: 18px;
+   font-size: 24px;
 }
 
 .footer-content {
@@ -382,6 +389,11 @@ nav {
    right: 8vw;
    top: 50%;
    transform: translateY(-50%);
+}
+
+.footer-link{
+   font-size: 18px;
+   color:rgb(90, 170, 186)
 }
 
 /*#endregion*/

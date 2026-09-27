@@ -6,17 +6,15 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!--meta name="robots" content="all" /-->
    <!-- meta name="revisit-after" content="7" /-->
-   <meta name="language" content="it" />
    <meta name="author" content="Francesco Romeo" />
    <meta name="description"
-      content="sito dell'applicazione applicazione mobile su cesare pavese e per il suo download" />
+      content="sito dell'applicazione mobile su cesare pavese e per il suo download" />
    <title>App Cesare Pavese</title>
    <link rel="icon" type="image/x-icon" href="./Assets/Images/Website/pen_logo.png">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700?family=Inter&display=swap"
       rel="stylesheet">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
    <!-- CUSTOM CSS-->
    <link rel="stylesheet" href="./style_default.css" />
    <link rel="stylesheet" href="./style_mobile.css" />
@@ -26,7 +24,7 @@
 <body>
    <nav class="glass">
       <img src="Assets/Images/Website/pen_logo.png" alt="Logo" id="logo">
-      <h1 class="title active" href="#" style="margin: 0;">Paverse</h1>
+      <span class="title active" style="margin: 0;">Paverse</span>
       <div class="nav-links">
          <a href="#welcome">Welcome</a>
          <a href="#download-section">App Download</a>
@@ -36,37 +34,40 @@
 
    <header>
 
-      <h2 id="welcome">
-            Benvenuti nel mondo di
-            <br>
-            Cesare Pavese
+      <h1 id="welcome">
+         Benvenuti nel mondo di
+         <br>
+         Cesare Pavese
+      </h1>
+
+      <h2 id="catchphrase">Perché la letteratura si vive, non solo si legge.<br>
+      Paverse porta l'universo di Cesare Pavese in un'esperienza mobile e VR, creata da un team di giovani sviluppatori e analisti per avvicinare i classici a un pubblico nuovo.
       </h2>
 
       <section class="glass" id="download-section">
          <img src="Assets/Images/Website/Red Blob.svg" alt="Red Blob" class="blob-red" />
-         <img src="Assets/Images/Website/Green Blob.svg" alt="Red Blob" class="blob-green" />
-         
+         <img src="Assets/Images/Website/Green Blob.svg" alt="Green Blob" class="blob-green" />
+
          <!--a href="app-index.html" class="try-web-app-button">
             <p class="try-web-app-text">Prova la web app</p>
          </a-->
-         <a href="https://github.com/FranzRome/Paverse/releases/download/release/Paverse.apk" class="button download-mobile-app-button">
+         <a href="https://github.com/FranzRome/Paverse/releases/download/release/Paverse.apk"
+            class="button download-mobile-app-button">
             <p class="download-mobile-app-text">Scarica l'App Mobile</p>
          </a>
 
          <section class="mobile-app">
-         <p class="mobile-app-text">Inquadra
-            <br>
-            e scarica l'App
-         </p><br>
-         <div class="qr-container">
-            <img src="Assets/Images/Website/qr_code.png"
-            alt="Codice QR per scaricare l'app mobile" 
-            class="qr-code">
-         </div>
-      </section>
+            <p class="mobile-app-text">Inquadra
+               <br>
+               e scarica l'App
+            </p><br>
+            <div class="qr-container">
+               <img src="Assets/Images/Website/qr_code.png" alt="Codice QR per scaricare l'app mobile" class="qr-code">
+            </div>
+         </section>
       </section>
 
-      
+
 
    </header>
    <main id="who">
@@ -74,17 +75,13 @@
       <section class="profile-cards-container">
          <div>
             <div class="profile-card red-glass hidden">
-               <figure>
-                  <img src="Assets/Images/Website/Profiles/Alessandro Pisci.jpg" alt="Alessandro Pisci"
-                     class="profile-card-img"><br>
-                  <figcaption>
-                     <span class="profile-card-name">
-                        Alessandro<br>Pisci
-                     </span>
-                     <br>
-                     <span class="profile-card-role"> Sviluppatore Mobile </span>
-                     </figcaption>
-               </figure>
+               <img src="Assets/Images/Website/Profiles/Alessandro Pisci.jpg" alt="Alessandro Pisci"
+                  class="profile-card-img"><br>
+               <span class="profile-card-name">
+                  Alessandro<br>Pisci
+               </span>
+               <br>
+               <span class="profile-card-role"> Sviluppatore Mobile </span>
             </div>
             <div class="profile-card red-glass hidden">
                <img src="Assets/Images/Website/Profiles/Francesco Romeo.jpg" alt="Francesco Romeo"
@@ -108,7 +105,7 @@
             </div>
             <div class="profile-card green-glass hidden">
                <img src="Assets/Images/Website/Profiles/Enrico Giangioppo.jpg" alt="Enrico Giangioppo"
-                  class="profile-card-img hidden"><br>
+                  class="profile-card-img"><br>
                <span class="profile-card-name">Enrico<br>Giangioppo</span><br>
                <span class="profile-card-role">Sviluppatore VR</span>
             </div>
@@ -143,18 +140,16 @@
    </main>
 
    <footer>
-      <h3 class="footer-title">Contatti<br>
-      </h3>
+      <h3 class="footer-title">Contatti:</h3>
       <span class="footer-content">
-         Mail: francesco.romeo.work@gmail.com
+         <a href="mailto:francesco.romeo.work@gmail.com" class="footer-link">Mail: francesco.romeo.work@gmail.com</a>
+      </span>
          <br>
-         Telefono: +39 3933261370
+      <span class="footer-content">
+         <a href="mailto:francesco.romeo.work@gmail.com" class="footer-link">Telefono: +39 3933261370</a>
       </span>
    </footer>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
    <script>
       let notDraggable = document.querySelectorAll('img,a');
 
